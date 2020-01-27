@@ -3,12 +3,184 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="keywords" content="седона, отдых, туризм, отели">
+    <meta name="description" content="Бронирование отелей в городе Седона">
   </head>
   <body>
 
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
 
   </body>
+
+  <header>
+    <a href="index.html">
+      <img src="sedona-logo.svg" alt="Логотип сайта &laquo;Седона&raquo;">
+    </a>
+    <nav>
+      <ul class="global-menu">
+        <li>
+          <a href="info.html">ИНФОРМАЦИЯ</a>
+        </li>
+        <li>
+          <a href="photo-video.html">ФОТО И ВИДЕО</a>
+        </li>
+        <li>
+          <a href="map.html">КАРТА ШТАТА</a>
+        </li>
+        <li>
+          <a href="hotels.html">ГОСТИНИЦЫ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <img src="welcome.svg" alt="Пейзаж штата">
+    <!-- В макете этот пейзаж состоит из векторного текста поверх растровой картинки
+       Если собирать его в таком виде, то я не уверен, что так можно через стили
+       Но можно все сделать одной картинкой и поставить в стили к global-menu
+       Зато к отдельной картинке, в качестве контента - можно задать свойство alt
+       -->
+  </header>
+
+  <main>
+    <h1>
+      Седона — небольшой городок в Аризоне,
+      заслуживающий большего!
+    </h1>
+    <p>
+      Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+    </p>
+
+    <section class="about-sedona">
+      <!--  Фоновые картинки и иконки - в стилях, потому что это не контент  -->
+      <article class="text-left">
+        <h3>
+          НАСТОЯЩИЙ <br>
+          ГОРОДОК
+        </h3>
+        <p>
+          — №1 —
+        </p>
+        <p>
+          СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br>
+          ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ
+        </p>
+      </article>
+      <ul>
+        <li>
+          <h3>ЖИЛЬЁ</h3>
+          <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ<br>
+            МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
+        </li>
+        <li>
+          <h3>ЕДА</h3>
+          <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,<br>
+            ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+        </li>
+        <li>
+          <h3>СУВЕНИРЫ</h3>
+          <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО<br>
+            ПРОИЗВОДСТВА!</p>
+        </li>
+      </ul>
+      <article class="text-right">
+        <article class="text-left">
+          <h3>
+            ТАМ ЕСТЬ<br>
+            МОСТ ДЬЯВОЛА
+          </h3>
+          <p>
+            — №2 —
+          </p>
+          <p>
+            ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО <br>
+            ВЫ ОСМЕЛИТЕСЬ
+          </p>
+        </article>
+        <ul>
+          <li>
+            <h3>НЕБОЛЬШАЯ<br>
+              ПЛОЩАДЬ
+            </h3>
+            <p>
+              — №3 —
+            </p>
+            <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ<br>
+              НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+          </li>
+          <li>
+            <h3>КРАСИВАЯ<br>
+              ДОРОГА</h3>
+            <p>
+              — №4 —
+            </p>
+            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br>
+              НЕ СКУЧНО!</p>
+          </li>
+          <li>
+            <h3>МАЛО<br>
+              ТУРИСТОВ</h3>
+            <p>
+              — №5 —
+            </p>
+            <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН<br>
+              И ТОЛПИТСЯ ТАМ</p>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="map">
+      <h2>
+        ЗАИНТЕРЕСОВАЛИСЬ?
+      </h2>
+      <p>
+        Укажите предполагаемые даты поездки,<br>
+        и мы покажем вам лучшие предложения гостиниц в седоне
+      </p>
+      <form action="https://echo.sedona.ru/hotel-search.php" method="get" class="hotel-search">
+        <fieldset>
+          <legend>
+            ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
+          </legend>
+          <label for="arrival-date">ДАТА ЗАЕЗДА:</label>
+          <input id="arrival-date" type="date">
+          <label for="departure-date">ДАТА ВЫЕЗДА:</label>
+          <input id="departure-date" type="date">
+          <label for="adults">ВЗРОСЛЫЕ:</label>
+          <input id="adults" type="number">
+          <label for="children">Дети:</label>
+          <input id="children" type="number">
+          <button type="submit">НАЙТИ</button>
+        </fieldset>
+      </form>
+<!--   Форма черновая, по памяти с пройденных курсов   -->
+
+      <iframe src="https://www.google.com/maps/d/embed?mid=1xhBW8SnyA4pQczL9irKflwcf5wC-XR3T" width="400" height="470"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      #VISITSEDONA<br>
+      Тел: +7(495) 666-02-66
+    </p>
+    <ul class="sedona-social">
+      <li>
+        <img src="twitter-logo.svg" alt="Лого Твиттер">
+      </li>
+      <li>
+        <img src="facebook-logo.svg" alt="Лого Фейсбук">
+      </li>
+      <li>
+        <img src="vkontakt-logo.svg" alt="Лого ВКонтакте">
+      </li>
+    </ul>
+    <img src="by-html-academy.svg" alt="Website by HTML academy">
+  </footer>
+<!-- Можно было обойтись без класса sedona-social
+ и стилизовать через footer>li -->
+
+</html>
 
 <!--
 Повторить фразовые и потоковые элементы
@@ -21,5 +193,3 @@
 
 валидатор: https://validator.w3.org/
 -->
-
-</html>
