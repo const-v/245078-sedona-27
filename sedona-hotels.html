@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <meta name="keywords" content="седона, отдых, туризм, отели">
+    <meta name="description" content="Бронирование отелей в городе Седона">
+  </head>
+  <body>
+
+    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+
+  </body>
+
+  <main>
+    <!--  Скрытый заголовок первого уровня  -->
+    <h1>
+      Выбор и бронирование отеля
+    </h1>
+
+  <section class="hotel-filter">
+<!--    Фильтр выбора отеля     -->
+  </section>
+
+    <section class="filtered-hotel">
+      <section class="hotel-data">
+        <img src="amara.jpg" alt="Фотография отеля Amara Resort & Spa">
+        <div>
+          <h3>
+            AMARA RESORT & SPA
+          </h3>
+          <p>
+            ГОСТИНИЦА
+          </p>
+          <p>
+            От 4000 Р.
+          </p>
+          <!--   Два <p> отдельно, потому что эти поля, по идее, должны заполняться движком
+          и им нужны будут разные id -->
+          <button type="button" class="detail">ПОДРОБНЕЕ</button>
+          <button type="button" class="reservation">ЗАБРОНИРОВАТЬ</button>
+        </div>
+        <div class="stars-4">
+          <!--   Класс определяет количество звезд, они задаются в стилях   -->
+          <p>
+            РЕЙТИНГ:
+          </p>
+          <p>
+            8,5
+          </p>
+          <!--   Два <p> отдельно, потому что эти поля, по идее, должны заполняться движком
+          и им нужны будут разные id -->
+        </div>
+      </section>
+      <section class="hotel-data">
+        <img src="desert.jpg" alt="Фотография мотеля Desert Quail Inn">
+        <div>
+          <h3>
+            DESERT QUAIL INN
+          </h3>
+          <p>
+            МОТЕЛЬ
+          </p>
+          <p>
+            От 3000 Р.
+          </p>
+          <!--   Два <p> отдельно, потому что эти поля, по идее, должны заполняться движком
+          и им нужны будут разные id -->
+          <button type="button" class="detail">ПОДРОБНЕЕ</button>
+          <button type="button" class="reservation">ЗАБРОНИРОВАТЬ</button>
+        </div>
+        <div class="stars-3">
+          <!--   Класс определяет количество звезд, они задаются в стилях   -->
+          <p>
+            РЕЙТИНГ:
+          </p>
+          <p>
+            8,9
+          </p>
+          <!--   Два <p> отдельно, потому что эти поля, по идее, должны заполняться движком
+          и им нужны будут разные id -->
+        </div>
+      </section>
+      <section class="hotel-data">
+        <img src="villas.jpg" alt="Фотография аппартаментов Villas at Poco Diablo">
+        <div>
+          <h3>
+            VILLAS AT POCO DIABLO
+          </h3>
+          <p>
+            АПАРТАМЕНТЫ
+          </p>
+          <p>
+            От 2000 Р.
+          </p>
+          <!--   Два <p> отдельно, потому что эти поля, по идее, должны заполняться движком
+          и им нужны будут разные id -->
+          <button type="button" class="detail">ПОДРОБНЕЕ</button>
+          <button type="button" class="reservation">ЗАБРОНИРОВАТЬ</button>
+        </div>
+        <div class="stars-2">
+          <!--   Класс определяет количество звезд, они задаются в стилях   -->
+          <p>
+            РЕЙТИНГ:
+          </p>
+          <p>
+            9,2
+          </p>
+          <!--   Два <p> отдельно, потому что эти поля, по идее, должны заполняться движком
+          и им нужны будут разные id -->
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <header>
+    <a href="index.html">
+      <img src="sedona-logo.svg" alt="Логотип сайта &laquo;Седона&raquo;">
+    </a>
+    <nav>
+      <ul class="global-menu">
+        <li>
+          <a href="info.html">ИНФОРМАЦИЯ</a>
+        </li>
+        <li>
+          <a href="photo-video.html">ФОТО И ВИДЕО</a>
+        </li>
+        <li>
+          <a href="map.html">КАРТА ШТАТА</a>
+        </li>
+        <li>
+          <a href="hotels.html">ГОСТИНИЦЫ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <img src="welcome.svg" alt="Пейзаж штата">
+    <!-- В макете этот пейзаж состоит из векторного текста поверх растровой картинки
+       Если собирать его в таком виде, то я не уверен, что так можно через стили
+       Но можно все сделать одной картинкой и поставить в стили к global-menu
+       Зато к отдельной картинке, в качестве контента - можно задать свойство alt
+       -->
+  </header>
+
+  <footer>
+    <p>
+      #VISITSEDONA<br>
+      Тел: +7(495) 666-02-66
+    </p>
+    <ul class="sedona-social">
+      <li>
+        <img src="twitter-logo.svg" alt="Лого Твиттер">
+      </li>
+      <li>
+        <img src="facebook-logo.svg" alt="Лого Фейсбук">
+      </li>
+      <li>
+        <img src="vkontakt-logo.svg" alt="Лого ВКонтакте">
+      </li>
+    </ul>
+    <img src="by-html-academy.svg" alt="Website by HTML academy">
+    <!-- Можно было обойтись без класса sedona-social
+     и стилизовать через footer>li -->
+  </footer>
+
+
+</html>
+
+<!--
+Повторить фразовые и потоковые элементы
+Повторить "nav - 1 на странице"
+Посмотреть подробно тонкости заголовков в спеке
+Пересмотреть header в лекции
+Пересмотреть начало "Прямого эфира"
+
+Отвлекли на "Секциях"
+
+валидатор: https://validator.w3.org/
+-->
