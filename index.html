@@ -6,16 +6,16 @@
     <meta name="keywords" content="седона, отдых, туризм, отели">
     <meta name="description" content="Бронирование отелей в городе Седона">
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+<body>
 
   <header>
-    <a href="index.html">
-      <img src="sedona-logo.svg" alt="Логотип сайта &laquo;Седона&raquo;">
+    <a class="sedona-logo" href="index.html">
+      <div>
+        <img src="sedona-logo.svg" alt="Логотип сайта &laquo;Седона&raquo;">
+      </div>
     </a>
-    <nav>
+    <nav class="global-nav">
       <ul class="global-menu">
         <li>
           <a href="">ИНФОРМАЦИЯ</a>
@@ -32,130 +32,148 @@
       </ul>
     </nav>
 
-    <img src="welcome.svg" alt="Пейзаж штата">
-    <!-- В макете этот пейзаж состоит из векторного текста поверх растровой картинки
-       Если собирать его в таком виде, то я не уверен, что так можно через стили
-       Но можно все сделать одной картинкой и поставить в стили к global-menu
-       Зато к отдельной картинке, в качестве контента - можно задать свойство alt
-       -->
+    <div class="welcome-bg">
+      <img src="welcome.svg" alt="Добро пожаловать">
+    </div>
   </header>
 
   <main>
-    <h1>
+    <h1 class="h1-main-page">
       Седона — небольшой городок в Аризоне,
       заслуживающий большего!
     </h1>
-    <p>
+    <p class="sub-header-main-page">
       Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
     </p>
 
-    <section class="about-sedona">
-      <!--  Фоновые картинки и иконки - в стилях, потому что это не контент  -->
-      <article class="text-left">
-        <h3>
-          НАСТОЯЩИЙ <br>
-          ГОРОДОК
-        </h3>
-        <p>
-          — №1 —
-        </p>
-        <p>
-          СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br>
-          ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ
-        </p>
-      </article>
-      <ul>
+    <section class="about-sedona-text-left">
+      <div class="about-text-left-img">
+        <div class="about-text">
+          <h3 class="header-about-text-white">
+            НАСТОЯЩИЙ<br>
+            ГОРОДОК
+          </h3>
+          <p class="paragraph-about-text-white">
+            — №1 —
+          </p>
+          <p class="paragraph-about-text-white">
+            СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ
+          </p>
+        </div>
+
+        <div class="about-img">
+          <img src="real-city.jpg" alt="Фото города">
+        </div>
+      </div>
+
+      <ul class="list-about-text-left">
         <li>
-          <h3>ЖИЛЬЁ</h3>
-          <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ<br>
-            МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
+          <h3 class="header-about-list-black">
+            ЖИЛЬЁ
+          </h3>
+          <p class="paragraph-about-list-black">
+            РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЁ КАК В КИНО!
+          </p>
         </li>
         <li>
-          <h3>ЕДА</h3>
-          <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,<br>
-            ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+          <h3 class="header-about-list-black">
+            ЕДА
+          </h3>
+          <p class="paragraph-about-list-black">
+            ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!
+          </p>
         </li>
         <li>
-          <h3>СУВЕНИРЫ</h3>
-          <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО<br>
-            ПРОИЗВОДСТВА!</p>
+          <h3 class="header-about-list-black">
+            СУВЕНИРЫ
+          </h3>
+          <p class="paragraph-about-list-black">
+            НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!
+          </p>
         </li>
       </ul>
-      <article class="text-right">
-        <article class="text-left">
-          <h3>
+    </section>
+
+    <section class="about-sedona-text-right">
+      <div class="about-text-right-img">
+        <div class="about-img">
+          <img src="canyon-photo.jpg" alt="Фото каньона">
+        </div>
+
+        <div class="about-text">
+          <h3 class="header-about-text-white">
             ТАМ ЕСТЬ<br>
             МОСТ ДЬЯВОЛА
           </h3>
-          <p>
+          <p class="paragraph-about-text-white">
             — №2 —
           </p>
-          <p>
-            ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО <br>
-            ВЫ ОСМЕЛИТЕСЬ
+          <p class="paragraph-about-text-white">
+            ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ
           </p>
-        </article>
-        <ul>
-          <li>
-            <h3>НЕБОЛЬШАЯ<br>
-              ПЛОЩАДЬ
-            </h3>
-            <p>
-              — №3 —
-            </p>
-            <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ<br>
-              НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
-          </li>
-          <li>
-            <h3>КРАСИВАЯ<br>
-              ДОРОГА</h3>
-            <p>
-              — №4 —
-            </p>
-            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br>
-              НЕ СКУЧНО!</p>
-          </li>
-          <li>
-            <h3>МАЛО<br>
-              ТУРИСТОВ</h3>
-            <p>
-              — №5 —
-            </p>
-            <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН<br>
-              И ТОЛПИТСЯ ТАМ</p>
-          </li>
-        </ul>
-      </article>
+        </div>
+      </div>
+
+      <ul class="list-about-text-left">
+        <li>
+          <h3 class="header-about-list-black">НЕБОЛЬШАЯ<br>
+            ПЛОЩАДЬ
+          </h3>
+          <p class="paragraph-about-text-black">
+            — №3 —
+          </p>
+          <p>
+            ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО
+          </p>
+        </li>
+        <li>
+          <h3 class="header-about-list-black">КРАСИВАЯ<br>
+            ДОРОГА</h3>
+          <p class="paragraph-about-text-black">
+            — №4 —
+          </p>
+          <p class="paragraph-about-text-black">
+            ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!
+          </p>
+        </li>
+        <li>
+          <h3 class="header-about-list-black">МАЛО<br>
+            ТУРИСТОВ</h3>
+          <p class="paragraph-about-text-black">
+            — №5 —
+          </p>
+          <p class="paragraph-about-text-black">
+            БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ
+          </p>
+        </li>
+      </ul>
+
     </section>
 
     <section class="map">
-      <h2>
-        ЗАИНТЕРЕСОВАЛИСЬ?
-      </h2>
-      <p>
-        Укажите предполагаемые даты поездки,<br>
-        и мы покажем вам лучшие предложения гостиниц в седоне
+      <p class="map-question">
+        <strong>ЗАИНТЕРЕСОВАЛИСЬ?</strong><br>
+        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
 
-      <span>
-        <br>
-        ФОРМА
-        <br>
-      </span>
+      <form class="search-form">
+<!--   Search form    -->
+      <button class="start-search" type="submit">НАЙТИ</button>
+      </form>
 
-      <span>
-        <br>
-        КАРТА
-        <br>
-      </span>
+      <section class="search-map">
+<!--     Search map   -->
+      </section>
     </section>
   </main>
 
   <footer>
-    <p>
+    <p class="tag-tel-footer">
       #VISITSEDONA<br>
       Тел: +7(495) 666-02-66
     </p>
+
+<!--  Здесь у li тоже должен быть класс? По идее, у этого ul уже есть класс и для li должно быть достаточно .sedona-social> {}  -->
     <ul class="sedona-social">
       <li>
         <img src="twitter-logo.svg" alt="Лого Твиттер">
@@ -167,12 +185,10 @@
         <img src="vkontakt-logo.svg" alt="Лого ВКонтакте">
       </li>
     </ul>
-    <img src="by-html-academy.svg" alt="Website by HTML academy">
-    <!-- Можно было обойтись без класса sedona-social
-     и стилизовать через footer>li -->
+    <p><img src="by-html-academy.svg" alt="Website by HTML academy"></p>
   </footer>
 
-  </body>
+</body>
 
 </html>
 

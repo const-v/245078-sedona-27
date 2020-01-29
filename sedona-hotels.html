@@ -6,138 +6,157 @@
     <meta name="keywords" content="седона, отдых, туризм, отели">
     <meta name="description" content="Бронирование отелей в городе Седона">
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<body>
 
   <header>
-    <a href="index.html">
+    <a class="sedona-logo" href="index.html">
       <img src="sedona-logo.svg" alt="Логотип сайта &laquo;Седона&raquo;">
     </a>
-    <nav>
+    <nav class="global-nav">
       <ul class="global-menu">
         <li>
-          <a href="info.html">ИНФОРМАЦИЯ</a>
+          <a href="">ИНФОРМАЦИЯ</a>
         </li>
         <li>
-          <a href="photo-video.html">ФОТО И ВИДЕО</a>
+          <a href="">ФОТО И ВИДЕО</a>
         </li>
         <li>
-          <a href="map.html">КАРТА ШТАТА</a>
+          <a href="">КАРТА ШТАТА</a>
         </li>
         <li>
-          <a href="hotels.html">ГОСТИНИЦЫ</a>
+          <a href="sedona-hotels.html">ГОСТИНИЦЫ</a>
         </li>
       </ul>
     </nav>
 
-    <img src="welcome.svg" alt="Пейзаж штата">
-    <!-- В макете этот пейзаж состоит из векторного текста поверх растровой картинки
-       Если собирать его в таком виде, то я не уверен, что так можно через стили
-       Но можно все сделать одной картинкой и поставить в стили к global-menu
-       Зато к отдельной картинке, в качестве контента - можно задать свойство alt
-       -->
+    <div class="welcome-bg">
+      <img src="welcome.svg" alt="Добро пожаловать">
+    </div>
   </header>
 
   <main>
-    <!--  Скрытый заголовок первого уровня  -->
-    <h1>
+    <h1 class="hidden-header">
       Выбор и бронирование отеля
     </h1>
 
-  <section class="hotel-filter">
-    <span>Фильтр выбора отеля</span>
-  </section>
+    <section class="hotel-filter">
+  <!--    Фильтр выбора отеля-->
 
-    <section class="filtered-hotel">
-      <section class="hotel-data">
-        <img src="amara.jpg" alt="Фотография отеля Amara Resort & Spa">
-        <div>
-          <h3>
+      <p class="search-label">
+        НАЙДЕНО:
+      </p>
+      <p class="search-label" id="search-numbers">
+        3
+      </p>
+      <p class="sort-label">
+        СОРТИРОВКА:
+      </p>
+      <ul class="sort-type">
+        <li>
+          <p class="sort-type-price sort-type-price-selected">
+            ПО ЦЕНЕ
+          </p>
+        </li>
+        <li>
+          <p class="sort-type-price">
+            ПО ТИПУ
+          </p>
+        </li>
+        <li>
+          <p class="sort-type-price">
+            ПО РЕЙТИНГУ
+          </p>
+        </li>
+      </ul>
+    </section>
+
+
+<!--
+    Ниже непонятно как оформить
+    С одной стороны - это все таки список, хотя выглядит как таблица. Раз ты не попросил меня размечать это как таблицу, значит я поступил правильно. Потому я размечу его как список, куда движок будет добавлять пункты немаркированного списка. В этом случае элементам списка нужны будут id?
+-->
+    <ul class="filtered-hotel">
+      <li class="hotel-data">
+<!--   Почему картинки именно в p, а не в div ?     -->
+        <p class="hotel-img">
+          <img src="amara.jpg" alt="Фотография отеля Amara Resort & Spa">
+        </p>
+        <div class="hotel-data">
+          <h3 class="header-hotel-data">
             AMARA RESORT & SPA
           </h3>
-          <p>
+          <p class="hotel-type" id="hotel-type-01">
             ГОСТИНИЦА
           </p>
-          <p>
+          <p class="hotel-cost" id="hotel-cost-01">
             От 4000 Р.
           </p>
-          <!--   Два <p> отдельно, потому что эти поля, по идее, должны заполняться движком
-          и им нужны будут разные id -->
           <button type="button" class="detail">ПОДРОБНЕЕ</button>
           <button type="button" class="reservation">ЗАБРОНИРОВАТЬ</button>
         </div>
         <div class="stars-4">
-          <!--   Класс определяет количество звезд, они задаются в стилях   -->
-          <p>
+          <p class="hotel-reit-label">
             РЕЙТИНГ:
           </p>
-          <p>
+          <p class="hotel-reit-number" id="hotel-reit-number-01">
             8,5
           </p>
-          <!--   Два <p> отдельно, потому что эти поля, по идее, должны заполняться движком
-          и им нужны будут разные id -->
         </div>
-      </section>
-      <section class="hotel-data">
-        <img src="desert.jpg" alt="Фотография мотеля Desert Quail Inn">
-        <div>
-          <h3>
+      </li>
+      <li class="hotel-data">
+        <p class="hotel-img">
+          <img src="desert.jpg" alt="Фотография мотеля Desert Quail Inn">
+        </p>
+        <div class="hotel-data">
+          <h3 class="header-hotel-data">
             DESERT QUAIL INN
           </h3>
-          <p>
+          <p class="hotel-type" id="hotel-type-02">
             МОТЕЛЬ
           </p>
-          <p>
+          <p class="hotel-cost" id="hotel-cost-02">
             От 3000 Р.
           </p>
-          <!--   Два <p> отдельно, потому что эти поля, по идее, должны заполняться движком
-          и им нужны будут разные id -->
           <button type="button" class="detail">ПОДРОБНЕЕ</button>
           <button type="button" class="reservation">ЗАБРОНИРОВАТЬ</button>
         </div>
         <div class="stars-3">
-          <!--   Класс определяет количество звезд, они задаются в стилях   -->
-          <p>
+          <p id="hotel-reit-label">
             РЕЙТИНГ:
           </p>
-          <p>
+          <p class="hotel-reit-number" id="hotel-reit-number-02">
             8,9
           </p>
-          <!--   Два <p> отдельно, потому что эти поля, по идее, должны заполняться движком
-          и им нужны будут разные id -->
         </div>
-      </section>
-      <section class="hotel-data">
-        <img src="villas.jpg" alt="Фотография аппартаментов Villas at Poco Diablo">
-        <div>
-          <h3>
+      </li>
+      <li class="hotel-data">
+        <p class="hotel-img">
+          <img src="villas.jpg" alt="Фотография аппартаментов Villas at Poco Diablo">
+        </p>
+        <div class="hotel-data">
+          <h3 class="header-hotel-data">
             VILLAS AT POCO DIABLO
           </h3>
-          <p>
+          <p class="hotel-type" id="hotel-type-03">
             АПАРТАМЕНТЫ
           </p>
-          <p>
+          <p class="hotel-cost" id="hotel-cost-03">
             От 2000 Р.
           </p>
-          <!--   Два <p> отдельно, потому что эти поля, по идее, должны заполняться движком
-          и им нужны будут разные id -->
           <button type="button" class="detail">ПОДРОБНЕЕ</button>
           <button type="button" class="reservation">ЗАБРОНИРОВАТЬ</button>
         </div>
         <div class="stars-2">
-          <!--   Класс определяет количество звезд, они задаются в стилях   -->
           <p>
             РЕЙТИНГ:
           </p>
-          <p>
+          <p class="hotel-reit-number" id="hotel-reit-number-03">
             9,2
           </p>
-          <!--   Два <p> отдельно, потому что эти поля, по идее, должны заполняться движком
-          и им нужны будут разные id -->
         </div>
-      </section>
-    </section>
+      </li>
+    </ul>
   </main>
 
   <footer>
