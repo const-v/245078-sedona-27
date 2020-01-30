@@ -3,12 +3,194 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="keywords" content="седона, отдых, туризм, отели">
+    <meta name="description" content="Бронирование отелей в городе Седона">
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<body>
 
-  </body>
+  <header>
+    <a class="sedona-logo" href="index.html">
+      <div>
+        <img src="sedona-logo.svg" alt="Логотип сайта &laquo;Седона&raquo;">
+      </div>
+    </a>
+    <nav class="global-nav">
+      <ul class="global-menu">
+        <li>
+          <a href="">ИНФОРМАЦИЯ</a>
+        </li>
+        <li>
+          <a href="">ФОТО И ВИДЕО</a>
+        </li>
+        <li>
+          <a href="">КАРТА ШТАТА</a>
+        </li>
+        <li>
+          <a href="sedona-hotels.html">ГОСТИНИЦЫ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="welcome-bg">
+      <img src="welcome.svg" alt="Добро пожаловать">
+    </div>
+  </header>
+
+  <main>
+    <h1 class="h1-main-page">
+      Седона — небольшой городок в Аризоне,
+      заслуживающий большего!
+    </h1>
+    <p class="sub-header-main-page">
+      Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+    </p>
+
+    <section class="about-sedona-text-left">
+      <div class="about-text-left-img">
+        <div class="about-text">
+          <h3 class="header-about-text-white">
+            НАСТОЯЩИЙ<br>
+            ГОРОДОК
+          </h3>
+          <p class="paragraph-about-text-white">
+            — №1 —
+          </p>
+          <p class="paragraph-about-text-white">
+            СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ
+          </p>
+        </div>
+
+        <div class="about-img">
+          <img src="real-city.jpg" alt="Фото города">
+        </div>
+      </div>
+
+      <ul class="list-about-text-left">
+        <li>
+          <h3 class="header-about-list-black">
+            ЖИЛЬЁ
+          </h3>
+          <p class="paragraph-about-list-black">
+            РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЁ КАК В КИНО!
+          </p>
+        </li>
+        <li>
+          <h3 class="header-about-list-black">
+            ЕДА
+          </h3>
+          <p class="paragraph-about-list-black">
+            ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!
+          </p>
+        </li>
+        <li>
+          <h3 class="header-about-list-black">
+            СУВЕНИРЫ
+          </h3>
+          <p class="paragraph-about-list-black">
+            НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="about-sedona-text-right">
+      <div class="about-text-right-img">
+        <div class="about-img">
+          <img src="canyon-photo.jpg" alt="Фото каньона">
+        </div>
+
+        <div class="about-text">
+          <h3 class="header-about-text-white">
+            ТАМ ЕСТЬ<br>
+            МОСТ ДЬЯВОЛА
+          </h3>
+          <p class="paragraph-about-text-white">
+            — №2 —
+          </p>
+          <p class="paragraph-about-text-white">
+            ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ
+          </p>
+        </div>
+      </div>
+
+      <ul class="list-about-text-left">
+        <li>
+          <h3 class="header-about-list-black">НЕБОЛЬШАЯ<br>
+            ПЛОЩАДЬ
+          </h3>
+          <p class="paragraph-about-text-black">
+            — №3 —
+          </p>
+          <p>
+            ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО
+          </p>
+        </li>
+        <li>
+          <h3 class="header-about-list-black">КРАСИВАЯ<br>
+            ДОРОГА</h3>
+          <p class="paragraph-about-text-black">
+            — №4 —
+          </p>
+          <p class="paragraph-about-text-black">
+            ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!
+          </p>
+        </li>
+        <li>
+          <h3 class="header-about-list-black">МАЛО<br>
+            ТУРИСТОВ</h3>
+          <p class="paragraph-about-text-black">
+            — №5 —
+          </p>
+          <p class="paragraph-about-text-black">
+            БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ
+          </p>
+        </li>
+      </ul>
+
+    </section>
+
+    <section class="map">
+      <p class="map-question">
+        <strong>ЗАИНТЕРЕСОВАЛИСЬ?</strong><br>
+        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+      </p>
+
+      <form class="search-form">
+<!--   Search form    -->
+      <button class="start-search" type="submit">НАЙТИ</button>
+      </form>
+
+      <section class="search-map">
+<!--     Search map   -->
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p class="tag-tel-footer">
+      #VISITSEDONA<br>
+      Тел: +7(495) 666-02-66
+    </p>
+
+<!--  Здесь у li тоже должен быть класс? По идее, у этого ul уже есть класс и для li должно быть достаточно .sedona-social> {}  -->
+    <ul class="sedona-social">
+      <li>
+        <img src="twitter-logo.svg" alt="Лого Твиттер">
+      </li>
+      <li>
+        <img src="facebook-logo.svg" alt="Лого Фейсбук">
+      </li>
+      <li>
+        <img src="vkontakt-logo.svg" alt="Лого ВКонтакте">
+      </li>
+    </ul>
+    <p><img src="by-html-academy.svg" alt="Website by HTML academy"></p>
+  </footer>
+
+</body>
+
+</html>
 
 <!--
 Повторить фразовые и потоковые элементы
@@ -21,5 +203,3 @@
 
 валидатор: https://validator.w3.org/
 -->
-
-</html>
