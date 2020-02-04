@@ -9,179 +9,134 @@
 
 <body>
 
-  <header>
-    <a class="sedona-logo" href="index.html">
-      <div>
-        <img src="img/sedona-logo.svg" width="140" height="72" alt="Логотип сайта &laquo;Седона&raquo;">
+<header>
+  <a class="sedona-logo" href="index.html">
+    <div>
+      <img src="img/sedona-logo.svg" width="140" height="72" alt="Логотип сайта &laquo;Седона&raquo;">
+    </div>
+  </a>
+  <nav class="nav">
+    <ul class="nav-menu">
+      <li><a href="">ИНФОРМАЦИЯ</a></li>
+      <li><a href="">ФОТО И ВИДЕО</a></li>
+      <li><a href="">КАРТА ШТАТА</a></li>
+      <li><a href="sedona-hotels.html">ГОСТИНИЦЫ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1 class="hidden-header">
+    Выбор и бронирование отеля
+  </h1>
+
+  <section class="hotel-filter">
+<!--    Фильтр выбора отеля-->
+
+    <p class="search-label">НАЙДЕНО:</p>
+    <p class="search-label" id="search-numbers">3</p>
+    <p class="sort-label">СОРТИРОВКА:</p>
+    <ul class="sort-type">
+      <li><a href="" class="sort-price sort--selected">ПО ЦЕНЕ</a></li>
+      <li><a href="" class="sort-type">ПО ТИПУ</a></li>
+      <li><a href="" class="sort-reit">ПО РЕЙТИНГУ</a></li>
+    </ul>
+
+
+<!--  Почему в тег a вставлен тег span, а не просто текст?
+      Чтобы можно было классами превратить его в стрелки, а текст сохранил семантику и доступность?
+      -->
+    <ul class="sort-arrows">
+      <li class="sort-arrow">
+        <a href=""><span>ПО ВОЗРАСТАНИЮ</span></a>
+      </li>
+      <li class="sort-arrow">
+        <a href=""><span>ПО УБЫВАНИЮ</span></a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="filtered-hotels">
+
+    <article class="hotel">
+      <p class="hotel-photo">
+        <img src="img/amara.jpg" width="135" height="90" alt="Фотоотеля Amara Resort & Spa">
+      </p>
+      <div class="hotel-data">
+        <h3 class="hotel-name">AMARA RESORT & SPA</h3>
+        <p class="hotel-type" id="hotel-type-01">ГОСТИНИЦА</p>
+        <p class="hotel-cost" id="hotel-cost-01">От 4000 Р.</p>
+        <button type="button" class="detail">ПОДРОБНЕЕ</button>
+        <button type="button" class="reservation">ЗАБРОНИРОВАТЬ</button>
       </div>
-    </a>
-    <nav class="global-nav">
-      <ul class="global-menu">
-        <li>
-          <a href="">ИНФОРМАЦИЯ</a>
-        </li>
-        <li>
-          <a href="">ФОТО И ВИДЕО</a>
-        </li>
-        <li>
-          <a href="">КАРТА ШТАТА</a>
-        </li>
-        <li>
-          <a href="sedona-hotels.html">ГОСТИНИЦЫ</a>
-        </li>
-      </ul>
-    </nav>
+      <div class="stars-4">
+        <p class="reit-label">РЕЙТИНГ:</p>
+        <p class="reit-number" id="reit-number-01">8,5</p>
+      </div>
+    </article>
 
-  </header>
-
-  <main>
-    <h1 class="hidden-header">
-      Выбор и бронирование отеля
-    </h1>
-
-    <section class="hotel-filter">
-  <!--    Фильтр выбора отеля-->
-
-      <p class="search-label">
-        НАЙДЕНО:
+    <article class="hotel">
+      <p class="hotel-photo">
+        <img src="img/desert.jpg" width="135" height="90" alt="Фото Desert Quail Inn">
       </p>
-      <p class="search-label" id="search-numbers">
-        3
+      <div class="hotel-data">
+        <h3 class="hotel-name">DESERT QUAIL INN</h3>
+        <p class="hotel-type" id="hotel-type-02">МОТЕЛЬ</p>
+        <p class="hotel-cost" id="hotel-cost-02">От 3000 Р.</p>
+        <button type="button" class="detail">ПОДРОБНЕЕ</button>
+        <button type="button" class="reservation">ЗАБРОНИРОВАТЬ</button>
+      </div>
+      <div class="stars-3">
+        <p id="reit-label">РЕЙТИНГ:</p>
+        <p class="reit-number" id="reit-number-02">8,9</p>
+      </div>
+    </article>
+
+    <article class="hotel">
+      <p class="hotel-photo">
+        <img src="img/villas.jpg" width="135" height="90" alt="Фото Villas at Poco Diablo">
       </p>
-      <p class="sort-label">
-        СОРТИРОВКА:
-      </p>
-      <ul class="sort-type">
-        <li>
-          <p class="sort-type-price sort-type-price-selected">
-            ПО ЦЕНЕ
-          </p>
-        </li>
-        <li>
-          <p class="sort-type-price">
-            ПО ТИПУ
-          </p>
-        </li>
-        <li>
-          <p class="sort-type-price">
-            ПО РЕЙТИНГУ
-          </p>
-        </li>
-      </ul>
-    </section>
+      <div class="hotel-data">
+        <h3 class="hotel-name">VILLAS AT POCO DIABLO</h3>
+        <p class="hotel-type" id="hotel-type-03">АПАРТАМЕНТЫ</p>
+        <p class="hotel-cost" id="hotel-cost-03">От 2000 Р.</p>
+        <button type="button" class="detail">ПОДРОБНЕЕ</button>
+        <button type="button" class="reservation">ЗАБРОНИРОВАТЬ</button>
+      </div>
+      <div class="stars-2">
+        <p>РЕЙТИНГ:</p>
+        <p class="reit-number" id="reit-number-03">9,2</p>
+      </div>
+    </article>
+
+  </section>
+
+</main>
+
+<footer>
+  <p class="sedona-contacts">
+    #VISITSEDONA<br>
+    Тел: +7(495) 666-02-66
+  </p>
+
+  <ul class="sedona-social">
+    <li class="social-item">
+      <p><img src="img/twitter-logo.svg" width="17" height="15" alt="Лого Твиттер"></p>
+    </li>
+    <li>
+      <p><img src="img/facebook-logo.svg" width="12" height="22" alt="Лого Фейсбук"></p>
+    </li>
+    <li>
+      <p><img src="img/youtube-logo.svg" width="20" height="16" alt="Лого Ютуб"></p>
+    </li>
+  </ul>
+  <p class="htmlacademy-logo">
+    WEBSITE BY
+    <img src="img/by-html-academy.svg" width="115" height="41" alt="Website by HTML academy">
+  </p>
+</footer>
 
 
-<!--
-    Ниже непонятно как оформить
-    С одной стороны - это все таки список, хотя выглядит как таблица. Раз ты не попросил меня размечать это как таблицу, значит я поступил правильно. Потому я размечу его как список, куда движок будет добавлять пункты немаркированного списка. В этом случае элементам списка нужны будут id?
--->
-    <ul class="filtered-hotel">
-      <li class="hotel-data">
-<!--   Почему картинки именно в p, а не в div ?     -->
-        <p class="hotel-img">
-          <img src="img/amara.jpg" width="135" height="90" alt="Фотография отеля Amara Resort & Spa">
-        </p>
-        <div class="hotel-data">
-          <h3 class="header-hotel-data">
-            AMARA RESORT & SPA
-          </h3>
-          <p class="hotel-type" id="hotel-type-01">
-            ГОСТИНИЦА
-          </p>
-          <p class="hotel-cost" id="hotel-cost-01">
-            От 4000 Р.
-          </p>
-          <button type="button" class="detail">ПОДРОБНЕЕ</button>
-          <button type="button" class="reservation">ЗАБРОНИРОВАТЬ</button>
-        </div>
-        <div class="stars-4">
-          <p class="hotel-reit-label">
-            РЕЙТИНГ:
-          </p>
-          <p class="hotel-reit-number" id="hotel-reit-number-01">
-            8,5
-          </p>
-        </div>
-      </li>
-      <li class="hotel-data">
-        <p class="hotel-img">
-          <img src="img/desert.jpg" width="135" height="90" alt="Фотография мотеля Desert Quail Inn">
-        </p>
-        <div class="hotel-data">
-          <h3 class="header-hotel-data">
-            DESERT QUAIL INN
-          </h3>
-          <p class="hotel-type" id="hotel-type-02">
-            МОТЕЛЬ
-          </p>
-          <p class="hotel-cost" id="hotel-cost-02">
-            От 3000 Р.
-          </p>
-          <button type="button" class="detail">ПОДРОБНЕЕ</button>
-          <button type="button" class="reservation">ЗАБРОНИРОВАТЬ</button>
-        </div>
-        <div class="stars-3">
-          <p id="hotel-reit-label">
-            РЕЙТИНГ:
-          </p>
-          <p class="hotel-reit-number" id="hotel-reit-number-02">
-            8,9
-          </p>
-        </div>
-      </li>
-      <li class="hotel-data">
-        <p class="hotel-img">
-          <img src="img/villas.jpg" width="135" height="90" alt="Фотография аппартаментов Villas at Poco Diablo">
-        </p>
-        <div class="hotel-data">
-          <h3 class="header-hotel-data">
-            VILLAS AT POCO DIABLO
-          </h3>
-          <p class="hotel-type" id="hotel-type-03">
-            АПАРТАМЕНТЫ
-          </p>
-          <p class="hotel-cost" id="hotel-cost-03">
-            От 2000 Р.
-          </p>
-          <button type="button" class="detail">ПОДРОБНЕЕ</button>
-          <button type="button" class="reservation">ЗАБРОНИРОВАТЬ</button>
-        </div>
-        <div class="stars-2">
-          <p>
-            РЕЙТИНГ:
-          </p>
-          <p class="hotel-reit-number" id="hotel-reit-number-03">
-            9,2
-          </p>
-        </div>
-      </li>
-    </ul>
-  </main>
-
-  <footer>
-    <p>
-      #VISITSEDONA<br>
-      Тел: +7(495) 666-02-66
-    </p>
-    <ul class="sedona-social">
-      <li>
-        <p><img src="img/twitter-logo.svg" width="17" height="15" alt="Лого Твиттер"></p>
-      </li>
-      <li>
-        <p><img src="img/facebook-logo.svg" width="12" height="22" alt="Лого Фейсбук"></p>
-      </li>
-      <li>
-        <p><img src="img/youtube-logo.svg" width="20" height="16" alt="Лого Ютуб"></p>
-      </li>
-    </ul>
-    <p>
-      WEBSITE BY
-      <img src="img/by-html-academy.svg" width="115" height="41" alt="Website by HTML academy">
-    </p>
-    <!-- Можно было обойтись без класса sedona-social
-     и стилизовать через footer>li -->
-  </footer>
-
-  </body>
+</body>
 
 </html>
