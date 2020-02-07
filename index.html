@@ -141,9 +141,32 @@
       Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
     </p>
 
-    <form class="search-form">
-<!--   Search form    -->
-    <button class="start-search" type="submit">НАЙТИ</button>
+    <form class="search-form" method="post" action="#">
+      <fieldset>
+        <legend>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</legend>
+
+        <p>
+          <label class="arrival-label" for="arrival-input">ДАТА ЗАЕЗДА:</label>
+          <input type="text" placeholder="24 АПРЕЛЯ 2017" onfocus="(this.type='date')" id="arrival-input">
+        <!-- Нагуглил грязный хак, чтобы placeholder отображался в форме
+        Стоит его использовать в этом проекте?
+        -->
+        </p>
+        <p>
+          <label class="departure-label" for="departure-input">ДАТА ВЫЕЗДА:</label>
+          <input type="text" placeholder="4 ИЮЛЯ 2017" onfocus="(this.type='date')" id="departure-input">
+        </p>
+        <p>
+          <label class="adults-label" for="adults-input">ВЗРОСЛЫЕ:</label>
+          <input class="adults" id="adults-input" type="number" placeholder="2">
+        </p>
+        <p>
+          <label class="children-label" for="children-input">ДЕТИ:</label>
+          <input class="children" id="children-input" type="number" placeholder="0">
+        </p>
+
+        <button class="start-search" type="submit">НАЙТИ</button>
+      </fieldset>
     </form>
 
     <section class="search-map">
