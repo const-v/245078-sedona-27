@@ -7,10 +7,15 @@
     <meta name="description" content="Бронирование отелей в городе Седона">
     <link rel="stylesheet" href="css/styles.css">
   <!--  Добавил светло-серый фон, чтобы не пропадали логотипы соцсетей, пока не ыыедена нормальная стилизация
+  Да и уныло выглядит, как-то :)
   -->
   </head>
 
 <body>
+
+<!--
+  Надо ли добавлять аттрибуты role и aria для тегов header, main и footer?
+-->
 
 <header>
   <a class="sedona-logo" href="index.html">
@@ -120,6 +125,10 @@
       <strong>ЗАИНТЕРЕСОВАЛИСЬ?</strong><br>
       Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
     </p>
+<!--
+      Поскольку у формы есть legend для fieldset, то можно не добавлять aria-label?
+      Или надо?..
+ -->
 
     <form class="search-form" method="post" action="#">
       <fieldset>

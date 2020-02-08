@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Отдых в городе Седона</title>
     <meta name="keywords" content="седона, отдых, туризм, отели">
     <meta name="description" content="Бронирование отелей в городе Седона">
     <link rel="stylesheet" href="css/styles.css">
@@ -22,7 +22,10 @@
       <li role="menuitem"><a href="">ИНФОРМАЦИЯ</a></li>
       <li role="menuitem"><a href="">ФОТО И ВИДЕО</a></li>
       <li role="menuitem"><a href="">КАРТА ШТАТА</a></li>
-      <li role="menuitem"><a href="sedona-hotels.html">ГОСТИНИЦЫ</a></li>
+      <li role="menuitem" aria-current="page">
+        <span class="visually-hidden">Текущий пункт: </span>
+        <a href="sedona-hotels.html">ГОСТИНИЦЫ</a>
+      </li>
     </ul>
   </nav>
 </header>
@@ -34,21 +37,61 @@
 
   <section class="hotel-filter">
     <h2 class="visually-hidden">Выбор параметров отелей</h2>
-  <!--    Фильтр выбора отеля-->
 
-  <!-- Может уже стоит разметить хотя бы чекбоксы? В задании они все еще закрашены красным.
+    <form class="hotels-form" method="post" action="#">
+      <fieldset class="infrastructure-selects">
+        <legend>ИНФРАСТРУКТУРА:</legend>
+        <p>
+          <input class="pool-filter" id="pool-input" name="pool" type="checkbox" checked>
+          <label class="pool-label" for="pool-input">БАССЕЙН</label>
+        </p>
+        <p>
+          <input class="parking-filter" id="parking-input" name="parking" type="checkbox">
+          <label class="parking-label" for="parking-input">ПАРКОВКА</label>
+        </p>
+        <p>
+          <input class="wifi-filter" id="wifi-input" name="wifi" type="checkbox">
+          <label class="wifi-label" for="wifi-input">WI-FI</label>
+        </p>
+      </fieldset>
+      <fieldset class="hotel-selects">
+        <legend>ТИП ЖИЛЬЯ:</legend>
+        <p>
+          <input class="hotel-filter" id="hotel-input" name="hotel" type="checkbox" checked>
+          <label class="hotel-label" for="hotel-input">ГОСТИНИЦА</label>
+        </p>
+        <p>
+          <input class="motel-filter" id="motel-input" name="motel" type="checkbox" checked>
+          <label class="motel-label" for="motel-input">МОТЕЛЬ</label>
+        </p>
+        <p>
+          <input class="apartments-filter" id="apartments-input" name="apartments" type="checkbox" checked>
+          <label class="apartments-label" for="apartments-input">АПАРТАМЕНТЫ</label>
+        </p>
+      </fieldset>
+      <fieldset class="cost-select">
+        <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
+        <label class="cost-from" for="minimum-input">ОТ 0</label>
+        <label class="cost-to" for="maximum-input">ДО 3000</label>
+        <input class="bar-from" id="minimum-input" name="minimum" type="range"
+               min="0" max="3500" value="0" aria-label="Минимальноая цена за отель">
+        <input class="bar-to" id="maximum-input" name="maximum" type="range"
+               min="0" max="3500" value="3000" aria-label="Минимальноая цена за отель">
+      </fieldset>
+      <button class="search-hotels" type="submit">ПОКАЗАТЬ</button>
+    </form>
 
-  -->
-
-    <p class="search-label">НАЙДЕНО:</p>
-    <p class="search-label" id="search-numbers">3</p>
-    <p class="sort-label">СОРТИРОВКА:</p>
-    <ul class="sort-type">
+    <section class="sort-results">
+      <h2 class="visually-hidden">Сортировка найденных отелей по параметрам</h2>
+      <p class="search-label">НАЙДЕНО:</p>
+      <p class="search-label" id="search-numbers">3</p>
+      <p class="sort-label">СОРТИРОВКА:</p>
+      <ul class="sort-type">
       <li><a href="" class="sort-price sort--selected">ПО ЦЕНЕ</a></li>
       <li><a href="" class="sort-type">ПО ТИПУ</a></li>
       <li><a href="" class="sort-reit">ПО РЕЙТИНГУ</a></li>
-    </ul>
-
+      </ul>
+    </section>
 
 <!--  Почему в тег a вставлен тег span, а не просто текст?
       Чтобы можно было классами превратить его в стрелки, а текст сохранил семантику и доступность?
