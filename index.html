@@ -2,25 +2,42 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Отдых в городе Седона</title>
     <meta name="keywords" content="седона, отдых, туризм, отели">
     <meta name="description" content="Бронирование отелей в городе Седона">
+    <link rel="stylesheet" href="styles.css">
+  <!--  Добавил светло-серый фон, чтобы не пропадали логотипы соцсетей, пока не ыыедена нормальная стилизация
+  -->
   </head>
 
 <body>
 
 <header>
   <a class="sedona-logo" href="index.html">
-    <div>
-      <img src="img/sedona-logo.svg" width="140" height="72" alt="Логотип сайта &laquo;Седона&raquo;">
-    </div>
+    <p><img src="img/sedona-logo.svg" width="140" height="72" alt="Логотип сайта &laquo;Седона&raquo;"></p>
   </a>
+
+  <!--  Стоило ли сворачивать таким образом li>a и другие теги:
+                                        <li role="menuitem"><a href="">ИНФОРМАЦИЯ</a></li>
+   Или лучше было оставить раскрытыми:
+                                        <li role="menuitem">
+                                          <a href="">
+                                            ИНФОРМАЦИЯ
+                                          </a>
+                                        </li>
+  -->
+
+  <!--
+    Достаточно ли использовано аттрибутов role?
+    Не придумал, куда вставлять аттрибуты aria, вроде все теги имеют или содержжимое, или alt или связанные label
+  -->
+
   <nav class="nav">
-    <ul class="nav-menu">
-    <li><a href="">ИНФОРМАЦИЯ</a></li>
-    <li><a href="">ФОТО И ВИДЕО</a></li>
-    <li><a href="">КАРТА ШТАТА</a></li>
-    <li><a href="sedona-hotels.html">ГОСТИНИЦЫ</a></li>
+    <ul class="nav-menu" role="menubar">
+      <li role="menuitem"><a href="">ИНФОРМАЦИЯ</a></li>
+      <li role="menuitem"><a href="">ФОТО И ВИДЕО</a></li>
+      <li role="menuitem"><a href="">КАРТА ШТАТА</a></li>
+      <li role="menuitem"><a href="sedona-hotels.html">ГОСТИНИЦЫ</a></li>
     </ul>
   </nav>
 
@@ -34,108 +51,71 @@
     Седона — небольшой городок в Аризоне,
     заслуживающий большего!
   </h1>
+
   <p class="sub-header">
     Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
   </p>
 
   <section class="advantages">
+    <h2 class="visually-hidden">Преимущества города Седона</h2>
+    <!-- http://validator.w3.org выдал предупреждение, что секция не размечена заголовком 2-6 уровней
+      Надо ли вставлять сюда скрытый заголовок?
+      -->
     <section class="advantage">
-      <h3 class="advantage-header advantage-header--white">
-        НАСТОЯЩИЙ<br>
-        ГОРОДОК
-      </h3>
-      <p class="advantage-text advantage-text--white">
-        — №1 —
-      </p>
-      <p class="advantage-text advantage-text--white">
-        СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ
-      </p>
+      <h3 class="advantage-header advantage-header--white">НАСТОЯЩИЙ<br>ГОРОДОК</h3>
+      <p class="advantage-text advantage-text--white">— №1 —</p>
+      <p class="advantage-text advantage-text--white">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
     </section>
 
-    <p class="advantage-photo">
-      <img src="img/city.jpg" width="800" height="256" alt="Фото города">
-    </p>
+    <p class="advantage-photo"><img src="img/city.jpg" width="800" height="256" alt="Фото города"></p>
 
     <ul class="advantages-list advantages-list--icons">
       <li class="advantage-item">
-        <h3 class="advantage-header">
-          ЖИЛЬЁ
-        </h3>
-        <p class="advantage-text">
-          РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЁ КАК В КИНО!
-        </p>
+      <h3 class="advantage-header">ЖИЛЬЁ</h3>
+        <p class="advantage-text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
       </li>
       <li class="advantage-item">
-        <h3 class="advantage-header">
-          ЕДА
-        </h3>
-        <p class="advantage-text">
-          ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!
-        </p>
+        <h3 class="advantage-header">ЕДА</h3>
+        <p class="advantage-text">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
       </li>
       <li class="advantage-item">
-        <h3 class="advantage-header">
-          СУВЕНИРЫ
-        </h3>
-        <p class="advantage-text">
-          НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!
-        </p>
+        <h3 class="advantage-header">СУВЕНИРЫ</h3>
+        <p class="advantage-text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
       </li>
     </ul>
 
-    <p class="advantage-photo">
-      <img src="img/canyon.jpg" width="800" height="256" alt="Фото каньона">
-    </p>
+    <p class="advantage-photo"><img src="img/canyon.jpg" width="800" height="256" alt="Фото каньона"></p>
 
     <section class="advantage">
-      <h3 class="advantage-header">
-        ТАМ ЕСТЬ<br>
-        МОСТ ДЬЯВОЛА
-      </h3>
-      <p class="advantage-text">
-        — №2 —
-      </p>
-      <p class="advantage-text">
-        ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ
-      </p>
+      <h3 class="advantage-header">ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h3>
+      <p class="advantage-text">— №2 —</p>
+      <p class="advantage-text">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
     </section>
 
     <ul class="advantages-list">
       <li class="advantage-item">
-        <h3 class="advantage-header">НЕБОЛЬШАЯ<br>
-          ПЛОЩАДЬ
-        </h3>
-        <p class="advantage-text">
-          — №3 —
-        </p>
-        <p class="advantage-text">
-          ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО
-        </p>
+        <h3 class="advantage-header">НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</h3>
+        <p class="advantage-text">— №3 —</p>
+        <p class="advantage-text">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
       </li>
       <li class="advantage-item">
-        <h3 class="advantage-header">КРАСИВАЯ<br>
-          ДОРОГА</h3>
-        <p class="advantage-text">
-          — №4 —
-        </p>
-        <p class="advantage-text">
-          ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!
-        </p>
+        <h3 class="advantage-header">КРАСИВАЯ<br>ДОРОГА</h3>
+        <p class="advantage-text">— №4 —</p>
+        <p class="advantage-text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
       </li>
       <li class="advantage-item">
-        <h3 class="advantage-header">МАЛО<br>
-          ТУРИСТОВ</h3>
-        <p class="advantage-text">
-          — №5 —
-        </p>
-        <p class="advantage-text">
-          БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ
-        </p>
+        <h3 class="advantage-header">МАЛО<br>ТУРИСТОВ</h3>
+        <p class="advantage-text">— №5 —</p>
+        <p class="advantage-text">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
       </li>
     </ul>
   </section>
 
   <section class="hotel-search">
+  <h2 class="visually-hidden">Поиск отеля по параметрам</h2>
+  <!-- http://validator.w3.org выдал предупреждение, что секция не размечена заголовком 2-6 уровней
+    Надо ли вставлять сюда скрытый заголовок?
+    -->
     <p class="map-question">
       <strong>ЗАИНТЕРЕСОВАЛИСЬ?</strong><br>
       Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
@@ -144,34 +124,33 @@
     <form class="search-form" method="post" action="#">
       <fieldset>
         <legend>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</legend>
-
         <p>
           <label class="arrival-label" for="arrival-input">ДАТА ЗАЕЗДА:</label>
-          <input type="date" placeholder="24 АПРЕЛЯ 2017" id="arrival-input" value="2017-04-24">
+          <input class="arrival-date" id="arrival-input" name="arrival" type="date" value="2017-04-24">
+        <!-- Надо ли добавлять tabindex="0" и aria-labelledby для input как это рекоемндуется на https://weblind.ru?
+        Ведь поля уже обернуты в fieldset и навигация по ним работает с клавиатуры
+        -->
         </p>
         <p>
           <label class="departure-label" for="departure-input">ДАТА ВЫЕЗДА:</label>
-          <input type="date" placeholder="4 ИЮЛЯ 2017" id="departure-input" value="2017-07-04">
+          <input class="departure-date" id="departure-input" name="departure" type="date" value="2017-07-04">
         </p>
         <p>
           <label class="adults-label" for="adults-input">ВЗРОСЛЫЕ:</label>
-          <input class="adults" id="adults-input" type="number" placeholder="2">
+          <input class="adults-numbers" id="adults-input" name="adults" type="number" placeholder="2">
         </p>
         <p>
           <label class="children-label" for="children-input">ДЕТИ:</label>
-          <input class="children" id="children-input" type="number" placeholder="0">
+          <input class="children-numbers" id="children-input" name="children" type="number" placeholder="0">
         </p>
-
         <button class="start-search" type="submit">НАЙТИ</button>
       </fieldset>
     </form>
 
     <section class="search-map">
+      <h2 class="visually-hidden">Карта выбора отеля</h2>
 <!--     Search map   -->
-
-      <p>
-        <img src="img/map.jpg" width="1200" height="473" alt="">
-      </p>
+      <p><img src="img/map.jpg" width="1200" height="473" alt="Карта города Седона"></p>
     <!-- В лекции про форматы изображений, подобная катра была переведена в png,
     потому что меньше весила в этом формате
     Я бы, даже перевел ее в gif, если бы это дало экономию, а она может быть до 10 раз
@@ -179,32 +158,24 @@
     Для примера: map-.gif весит 42 кб. Самый оптимизированный png не будет настолько мал,
     не говоря про jpg
           -->
-
     </section>
   </section>
 </main>
 
 <footer>
-  <p class="sedona-contacts">
-    #VISITSEDONA<br>
+  <p class="sedona-contacts">#VISITSEDONA<br>
     Тел: +7(495) 666-02-66
   </p>
 
   <ul class="sedona-social">
-    <li>
-      <p><img src="img/twitter-logo.svg" width="17" height="15" alt="Лого Твиттер"></p>
-    </li>
-    <li>
-      <p><img src="img/facebook-logo.svg" width="12" height="22" alt="Лого Фейсбук"></p>
-    </li>
-    <li>
-      <p><img src="img/youtube-logo.svg" width="20" height="16" alt="Лого Ютуб"></p>
-    </li>
+    <li><a href=""><img src="img/twitter-logo.svg" width="17" height="15" alt="Твиттер города Седона"></a></li>
+    <li><a href=""><img src="img/facebook-logo.svg" width="12" height="22" alt="Страница Фейсбук города Седона"></a></li>
+    <li><a href=""><img src="img/youtube-logo.svg" width="20" height="16" alt="Канал Ютуб города Седона"></a></li>
   </ul>
-  <p class="htmlacademy-logo">
-    WEBSITE BY
-    <img src="img/by-html-academy.svg" width="115" height="41" alt="Website by HTML academy">
-  </p>
+
+  <a class="htmlacademy-logo" href="https://htmlacademy.ru">WEBSITE BY
+    <img src="img/by-html-academy.svg" width="115" height="41" alt="Сайт сделан студией HTML academy">
+  </a>
 </footer>
 
 </body>

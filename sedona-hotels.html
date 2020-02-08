@@ -5,33 +5,36 @@
     <title>HTML Academy: Седона</title>
     <meta name="keywords" content="седона, отдых, туризм, отели">
     <meta name="description" content="Бронирование отелей в городе Седона">
+    <link rel="stylesheet" href="styles.css">
   </head>
 
 <body>
 
 <header>
   <a class="sedona-logo" href="index.html">
-    <div>
-      <img src="img/sedona-logo.svg" width="140" height="72" alt="Логотип сайта &laquo;Седона&raquo;">
-    </div>
+    <p><img src="img/sedona-logo.svg" width="140" height="72" alt="Логотип сайта &laquo;Седона&raquo;"></p>
   </a>
+
+  <!--  Правильно использованы аттрибуты role?
+  -->
   <nav class="nav">
-    <ul class="nav-menu">
-      <li><a href="">ИНФОРМАЦИЯ</a></li>
-      <li><a href="">ФОТО И ВИДЕО</a></li>
-      <li><a href="">КАРТА ШТАТА</a></li>
-      <li><a href="sedona-hotels.html">ГОСТИНИЦЫ</a></li>
+    <ul class="nav-menu" role="menubar">
+      <li role="menuitem"><a href="">ИНФОРМАЦИЯ</a></li>
+      <li role="menuitem"><a href="">ФОТО И ВИДЕО</a></li>
+      <li role="menuitem"><a href="">КАРТА ШТАТА</a></li>
+      <li role="menuitem"><a href="sedona-hotels.html">ГОСТИНИЦЫ</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
-  <h1 class="hidden-header">
+  <h1 class="visually-hidden">
     Выбор и бронирование отеля
   </h1>
 
   <section class="hotel-filter">
-<!--    Фильтр выбора отеля-->
+    <h2 class="visually-hidden">Выбор параметров отелей</h2>
+  <!--    Фильтр выбора отеля-->
 
     <p class="search-label">НАЙДЕНО:</p>
     <p class="search-label" id="search-numbers">3</p>
@@ -57,7 +60,7 @@
   </section>
 
   <section class="filtered-hotels">
-
+    <h2 class="visually-hidden">Список подходящих отелей</h2>
     <article class="hotel">
       <p class="hotel-photo">
         <img src="img/amara.jpg" width="135" height="90" alt="Фотоотеля Amara Resort & Spa">
@@ -114,26 +117,19 @@
 </main>
 
 <footer>
-  <p class="sedona-contacts">
-    #VISITSEDONA<br>
+  <p class="sedona-contacts">#VISITSEDONA<br>
     Тел: +7(495) 666-02-66
   </p>
 
   <ul class="sedona-social">
-    <li class="social-item">
-      <p><img src="img/twitter-logo.svg" width="17" height="15" alt="Лого Твиттер"></p>
-    </li>
-    <li>
-      <p><img src="img/facebook-logo.svg" width="12" height="22" alt="Лого Фейсбук"></p>
-    </li>
-    <li>
-      <p><img src="img/youtube-logo.svg" width="20" height="16" alt="Лого Ютуб"></p>
-    </li>
+    <li><a href=""><img src="img/twitter-logo.svg" width="17" height="15" alt="Твиттер города Седона"></a></li>
+    <li><a href=""><img src="img/facebook-logo.svg" width="12" height="22" alt="Страница Фейсбук города Седона"></a></li>
+    <li><a href=""><img src="img/youtube-logo.svg" width="20" height="16" alt="Канал Ютуб города Седона"></a></li>
   </ul>
-  <p class="htmlacademy-logo">
-    WEBSITE BY
-    <img src="img/by-html-academy.svg" width="115" height="41" alt="Website by HTML academy">
-  </p>
+
+  <a class="htmlacademy-logo" href="https://htmlacademy.ru">WEBSITE BY
+    <img src="img/by-html-academy.svg" width="115" height="41" alt="Сайт сделан студией HTML academy">
+  </a>
 </footer>
 
 
