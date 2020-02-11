@@ -44,6 +44,10 @@ body {
   background-color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -55,16 +59,86 @@ body {
   overflow: hidden;
 }
 
-a {
-  text-decoration: none;
+/*
+  header
+*/
+
+.nav {
+  font: inherit;
+  font-weight: 700;
+  color: black;
+
+  background: white;
 }
+
+.nav-item a {
+  color: black;
+}
+
+.nav-menu {
+  list-style-type: none;
+}
+
+.nav-item--current a {
+  color: #766357;
+}
+
+.nav-menu a:hover {
+  color: #81b3d2;
+}
+
+.nav-menu a:active {
+  color: #cacaca;
+}
+
+/*
+  footer
+*/
+
+.sedona-contacts {
+  font-size: 21px;
+  font-weight:700;
+  line-height: 26px;
+}
+
+.sedona-social {
+  list-style: none;
+}
+
+.social-item {
+  background: #81b3d2;
+}
+
+.social-item:hover {
+  background: #669ec0;
+}
+
+.social-item:hover {
+  background: #669ec0;
+}
+
+.sedona-social:active {
+  background: #5496bd;
+}
+
+.sedona-social:active img {
+  opacity: 0.5;
+}
+
+.htmlacademy-logo {
+  color: black;
+}
+
+
+/*
+  buttons
+*/
 
 .brown-btn {
   font-weight: 700;
 
-  color: white;
-
   border: 0;
+  color: white;
   background: #766357;
 }
 
@@ -95,73 +169,9 @@ a {
   background: #5496bd;
 }
 
-.sedona-contacts {
-  font-size: 21px;
-  font-weight:700;
-  line-height: 26px;
-}
-
-.sedona-social {
-  list-style: none;
-}
-
-.social-item {
-  background: #81b3d2;
-}
-
-.social-item:hover {
-  background: #669ec0;
-}
-
-.social-item:hover {
-  background: #669ec0;
-}
-
-.sedona-social:active {
-  color: #94b9d2;
-
-  background: #5496bd;
-}
-
-.sedona-social:active img {
-  opacity: 0.5;
-}
-
-.htmlacademy-logo {
-  color: black;
-}
-
 /*
  index.html
 */
-
-.nav {
-  font: inherit;
-  font-weight: 700;
-  color: black;
-
-  background: white;
-}
-
-.nav-item a {
-  color: black;
-}
-
-.nav-menu {
-  list-style-type: none;
-}
-
-.nav-item--current a {
-  color: #766357;
-}
-
-.nav-menu a:hover {
-  color: #81b3d2;
-}
-
-.nav-menu a:active {
-  color: #cacaca;
-}
 
 .site-header {
   font-size: 21px;
@@ -234,7 +244,6 @@ a {
   background: white;
 }
 
-
 /*
  sedona-hotels.html
 */
@@ -269,6 +278,13 @@ a {
 }
 
 .reit-label {
-  color: red;
-  /*color: #666666;*/
+  color: #666666;
+}
+
+.reit-number {
+  color: #666666;
+}
+
+.stars-1, .stars-2, .stars-3, .stars-4, .stars-5 {
+  background: #f2f2f2;
 }
