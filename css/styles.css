@@ -28,6 +28,10 @@ sedona-hotels.html
   url('../fonts/pt-sans-v11-cyrillic-ext_latin_cyrillic-700.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
+/*
+  html
+*/
+
 body {
   margin: 0;
   padding: 0;

@@ -7,7 +7,7 @@
     <meta name="description" content="Бронирование отелей в городе Седона">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-  <!--  Добавил светло-серый фон, чтобы не пропадали логотипы соцсетей, пока не ыыедена нормальная стилизация
+  <!--  Добавил светло-серый фон, чтобы не пропадали логотипы соцсетей, пока не выедена нормальная стилизация
   Да и уныло выглядит, как-то :)
   -->
   </head>
@@ -23,16 +23,6 @@
     <p><img src="img/sedona-logo.svg" width="140" height="72" alt="Логотип сайта &laquo;Седона&raquo;"></p>
   </a>
 
-  <!--  Стоило ли сворачивать таким образом li>a и другие теги:
-                                        <li role="menuitem"><a href="">ИНФОРМАЦИЯ</a></li>
-   Или лучше было оставить раскрытыми:
-                                        <li role="menuitem">
-                                          <a href="">
-                                            ИНФОРМАЦИЯ
-                                          </a>
-                                        </li>
-  -->
-
   <!--
     Достаточно ли использовано аттрибутов role?
     Не придумал, куда вставлять аттрибуты aria, вроде все теги имеют или содержжимое, или alt или связанные label
@@ -40,10 +30,18 @@
 
   <nav class="nav">
     <ul class="nav-menu" role="menubar">
-      <li class="nav-item" role="menuitem"><a href="">ИНФОРМАЦИЯ</a></li>
-      <li class="nav-item" role="menuitem"><a href="">ФОТО И ВИДЕО</a></li>
-      <li class="nav-item" role="menuitem"><a href="">КАРТА ШТАТА</a></li>
-      <li class="nav-item" role="menuitem"><a href="sedona-hotels.html">ГОСТИНИЦЫ</a></li>
+      <li class="nav-item" role="menuitem">
+        <a href="">ИНФОРМАЦИЯ</a>
+      </li>
+      <li class="nav-item" role="menuitem">
+        <a href="">ФОТО И ВИДЕО</a>
+      </li>
+      <li class="nav-item" role="menuitem">
+        <a href="">КАРТА ШТАТА</a>
+      </li>
+      <li class="nav-item" role="menuitem">
+        <a href="sedona-hotels.html">ГОСТИНИЦЫ</a>
+      </li>
     </ul>
   </nav>
 
@@ -182,12 +180,19 @@
     Достаточно ли alt для доступности? Или надо добавить в <a> аттрибуты aria?
   -->
   <ul class="sedona-social">
-    <li class="social-item social-item--twitter"><a href=""><img src="img/twitter-logo.svg" width="17" height="15" alt="Твиттер города Седона"></a></li>
-    <li class="social-item social-item--fb"><a href=""><img src="img/facebook-logo.svg" width="12" height="22" alt="Страница Фейсбук города Седона"></a></li>
-    <li class="social-item social-item--youtube"><a href=""><img src="img/youtube-logo.svg" width="20" height="16" alt="Канал Ютуб города Седона"></a></li>
+    <li class="social-item social-item--twitter">
+      <a href=""><img src="img/twitter-logo.svg" width="17" height="15" alt="Твиттер города Седона"></a>
+    </li>
+    <li class="social-item social-item--fb">
+      <a href=""><img src="img/facebook-logo.svg" width="12" height="22" alt="Страница Фейсбук города Седона"></a>
+      </li>
+    <li class="social-item social-item--youtube">
+      <a href=""><img src="img/youtube-logo.svg" width="20" height="16" alt="Канал Ютуб города Седона"></a>
+    </li>
   </ul>
 
-  <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">WEBSITE BY
+  <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+    WEBSITE BY
     <img src="img/by-html-academy.svg" width="115" height="41" alt="Сайт сделан студией HTML academy">
   </a>
 </footer>
