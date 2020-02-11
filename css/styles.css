@@ -1,11 +1,43 @@
 /*
-  Styles for Sedona Project
-  index.html
-  sedona-hotels.html
+Styles for Sedona Project
+index.html
+sedona-hotels.html
 */
 
+/*
+  Fonts
+*/
+
+/* pt-sans-regular - cyrillic-ext_latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'),
+  url('../fonts/pt-sans-v11-cyrillic-ext_latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/pt-sans-v11-cyrillic-ext_latin_cyrillic-regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+/* pt-sans-700 - cyrillic-ext_latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+  url('../fonts/pt-sans-v11-cyrillic-ext_latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/pt-sans-v11-cyrillic-ext_latin_cyrillic-700.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
 body {
-  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+
+  background-color: white;
 }
 
 .visually-hidden {
@@ -17,4 +49,180 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  font: inherit;
+  font-weight: 700;
+  color: black;
+
+  background: white;
+}
+
+.nav-item a {
+  color: black;
+}
+
+.nav-menu {
+list-style-type: none;
+}
+
+.nav-item--current a {
+  color: #766357;
+}
+
+.nav-menu a:hover {
+  color: #81b3d2;
+}
+
+.nav-menu a:active {
+  color: #cacaca;
+}
+
+.site-header {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sub-header {
+  font: inherit;
+  line-height: 26px;
+}
+
+.advantage {
+  background: #81b3d2;
+}
+
+.advantage-header {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.advantage-text {
+font: inherit;
+line-height: 21px;
+}
+
+.advantages-list {
+list-style-type: none;
+}
+
+.advantage-header {
+font-size: 21px;
+font-weight: 700;
+line-height: 21px;
+}
+
+.advantage-header--white {
+color: white;
+}
+
+.advantage-text--white {
+  color: white;
+}
+
+.map-question strong {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.search-label {
+  font-weight: 700;
+
+  color: black;
+}
+
+.toggle-search {
+  font: inherit;
+  font-weight: 700;
+
+  color: white;
+
+  border: 0;
+  background: #766357;
+}
+
+.toggle-search:hover {
+  background: #604e43;
+}
+
+.toggle-search:active {
+  color: #928a85;
+  background: #503e33;
+}
+
+.search-form input {
+  font-weight: 700;
+
+  border: 0;
+  background: #f2f2f2;
+}
+
+.search-form input:hover {
+  background: #ebebeb;
+}
+
+.search-form input:active {
+  background: white;
+}
+
+.search-btn {
+  font-weight: 700;
+
+  border: 0;
+  color: white;
+  background: #81b3d2;
+}
+
+.search-btn:hover {
+  background: #669ec0;
+}
+
+.search-btn:active {
+  color: #94b9d2;
+
+  background: #5496bd;
+}
+
+.sedona-contacts {
+  font-size: 21px;
+  font-weight:700;
+  line-height: 26px;
+}
+
+.sedona-social {
+  list-style: none;
+}
+
+.social-item {
+  background: #81b3d2;
+}
+
+.social-item:hover {
+  background: #669ec0;
+}
+
+.social-item:hover {
+  background: #669ec0;
+}
+
+.sedona-social:active {
+  color: #94b9d2;
+
+  background: #5496bd;
+}
+
+.sedona-social:active img {
+  opacity: 0.5;
+}
+
+.htmlacademy-logo {
+  color: black;
 }

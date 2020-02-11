@@ -5,6 +5,7 @@
     <title>Отдых в городе Седона</title>
     <meta name="keywords" content="седона, отдых, туризм, отели">
     <meta name="description" content="Бронирование отелей в городе Седона">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   <!--  Добавил светло-серый фон, чтобы не пропадали логотипы соцсетей, пока не ыыедена нормальная стилизация
   Да и уныло выглядит, как-то :)
@@ -39,10 +40,10 @@
 
   <nav class="nav">
     <ul class="nav-menu" role="menubar">
-      <li role="menuitem"><a href="">ИНФОРМАЦИЯ</a></li>
-      <li role="menuitem"><a href="">ФОТО И ВИДЕО</a></li>
-      <li role="menuitem"><a href="">КАРТА ШТАТА</a></li>
-      <li role="menuitem"><a href="sedona-hotels.html">ГОСТИНИЦЫ</a></li>
+      <li class="nav-item" role="menuitem"><a href="">ИНФОРМАЦИЯ</a></li>
+      <li class="nav-item" role="menuitem"><a href="">ФОТО И ВИДЕО</a></li>
+      <li class="nav-item" role="menuitem"><a href="">КАРТА ШТАТА</a></li>
+      <li class="nav-item" role="menuitem"><a href="sedona-hotels.html">ГОСТИНИЦЫ</a></li>
     </ul>
   </nav>
 
@@ -53,12 +54,12 @@
 
 <main>
   <h1 class="site-header">
-    Седона — небольшой городок в Аризоне,
-    заслуживающий большего!
+    СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, <BR>
+    ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
   </h1>
 
   <p class="sub-header">
-    Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+    РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!
   </p>
 
   <section class="advantages">
@@ -70,9 +71,9 @@
       <h3 class="advantage-header advantage-header--white">НАСТОЯЩИЙ<br>ГОРОДОК</h3>
       <p class="advantage-text advantage-text--white">— №1 —</p>
       <p class="advantage-text advantage-text--white">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
+      <p class="advantage-photo"><img src="img/city.jpg" width="800" height="256" alt="Фото города"></p>
     </section>
 
-    <p class="advantage-photo"><img src="img/city.jpg" width="800" height="256" alt="Фото города"></p>
 
     <ul class="advantages-list advantages-list--icons">
       <li class="advantage-item">
@@ -89,12 +90,12 @@
       </li>
     </ul>
 
-    <p class="advantage-photo"><img src="img/canyon.jpg" width="800" height="256" alt="Фото каньона"></p>
 
     <section class="advantage">
-      <h3 class="advantage-header">ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h3>
-      <p class="advantage-text">— №2 —</p>
-      <p class="advantage-text">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+      <p class="advantage-photo"><img src="img/canyon.jpg" width="800" height="256" alt="Фото каньона"></p>
+      <h3 class="advantage-header advantage-header--white">ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h3>
+      <p class="advantage-text advantage-text--white">— №2 —</p>
+      <p class="advantage-text advantage-text--white">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
     </section>
 
     <ul class="advantages-list">
@@ -117,42 +118,43 @@
   </section>
 
   <section class="hotel-search">
-  <h2 class="visually-hidden">Поиск отеля по параметрам</h2>
+    <h2 class="visually-hidden">Поиск отеля по параметрам</h2>
   <!-- http://validator.w3.org выдал предупреждение, что секция не размечена заголовком 2-6 уровней
     Надо ли вставлять сюда скрытый заголовок?
     -->
     <p class="map-question">
       <strong>ЗАИНТЕРЕСОВАЛИСЬ?</strong><br>
-      Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+      УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
     </p>
 <!--
       Поскольку у формы есть legend для fieldset, то можно не добавлять aria-label?
       Или надо?..
  -->
 
+    <button class="toggle-search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+
     <form class="search-form" method="post" action="#">
-      <fieldset>
-        <legend>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</legend>
+    <fieldset>
         <p>
-          <label class="arrival-label" for="arrival-input">ДАТА ЗАЕЗДА:</label>
+          <label class="search-label" for="arrival-input">ДАТА ЗАЕЗДА:</label>
           <input class="arrival-date" id="arrival-input" name="arrival" type="date" value="2017-04-24">
         <!-- Надо ли добавлять tabindex="0" и aria-labelledby для input как это рекоемндуется на https://weblind.ru?
         Ведь поля уже обернуты в fieldset и навигация по ним работает с клавиатуры
         -->
         </p>
         <p>
-          <label class="departure-label" for="departure-input">ДАТА ВЫЕЗДА:</label>
+          <label class="search-label" for="departure-input">ДАТА ВЫЕЗДА:</label>
           <input class="departure-date" id="departure-input" name="departure" type="date" value="2017-07-04">
         </p>
         <p>
-          <label class="adults-label" for="adults-input">ВЗРОСЛЫЕ:</label>
+          <label class="search-label" for="adults-input">ВЗРОСЛЫЕ:</label>
           <input class="adults-numbers" id="adults-input" name="adults" type="number" placeholder="2">
         </p>
         <p>
-          <label class="children-label" for="children-input">ДЕТИ:</label>
+          <label class="search-label" for="children-input">ДЕТИ:</label>
           <input class="children-numbers" id="children-input" name="children" type="number" placeholder="0">
         </p>
-        <button class="start-search" type="submit">НАЙТИ</button>
+        <button class="search-btn" type="submit">НАЙТИ</button>
       </fieldset>
     </form>
 
@@ -180,12 +182,12 @@
     Достаточно ли alt для доступности? Или надо добавить в <a> аттрибуты aria?
   -->
   <ul class="sedona-social">
-    <li><a href=""><img src="img/twitter-logo.svg" width="17" height="15" alt="Твиттер города Седона"></a></li>
-    <li><a href=""><img src="img/facebook-logo.svg" width="12" height="22" alt="Страница Фейсбук города Седона"></a></li>
-    <li><a href=""><img src="img/youtube-logo.svg" width="20" height="16" alt="Канал Ютуб города Седона"></a></li>
+    <li class="social-item social-item--twitter"><a href=""><img src="img/twitter-logo.svg" width="17" height="15" alt="Твиттер города Седона"></a></li>
+    <li class="social-item social-item--fb"><a href=""><img src="img/facebook-logo.svg" width="12" height="22" alt="Страница Фейсбук города Седона"></a></li>
+    <li class="social-item social-item--youtube"><a href=""><img src="img/youtube-logo.svg" width="20" height="16" alt="Канал Ютуб города Седона"></a></li>
   </ul>
 
-  <a class="htmlacademy-logo" href="https://htmlacademy.ru">WEBSITE BY
+  <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">WEBSITE BY
     <img src="img/by-html-academy.svg" width="115" height="41" alt="Сайт сделан студией HTML academy">
   </a>
 </footer>
@@ -205,4 +207,8 @@
 валидатор: https://validator.w3.org/
 
 Доступность сайта https://weblind.ru/
+-->
+
+<!--
+
 -->
