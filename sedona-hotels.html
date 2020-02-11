@@ -95,15 +95,15 @@
       <p class="search-label">НАЙДЕНО:</p>
       <p class="search-label" id="search-numbers">3</p>
       <p class="sort-label">СОРТИРОВКА:</p>
-      <ul class="sort-type">
+      <ul class="sort-types">
       <li>
-        <a href="" class="sort-price sort--selected">ПО ЦЕНЕ</a>
+        <a href="" class="sort-type sort--selected">ПО ЦЕНЕ</a>
       </li>
       <li>
         <a href="" class="sort-type">ПО ТИПУ</a>
       </li>
       <li>
-        <a href="" class="sort-reit">ПО РЕЙТИНГУ</a>
+        <a href="" class="sort-type">ПО РЕЙТИНГУ</a>
       </li>
       </ul>
     </section>
@@ -113,7 +113,7 @@
       -->
     <ul class="sort-arrows">
       <li class="sort-arrow">
-        <a href=""><span>ПО ВОЗРАСТАНИЮ</span></a>
+        <a class="arrow-type" href=""><span>ПО ВОЗРАСТАНИЮ</span></a>
       </li>
       <li class="sort-arrow">
         <a href=""><span>ПО УБЫВАНИЮ</span></a>
@@ -131,8 +131,8 @@
         <h3 class="hotel-name">AMARA RESORT & SPA</h3>
         <p class="hotel-type" id="hotel-type-01">ГОСТИНИЦА</p>
         <p class="hotel-cost" id="hotel-cost-01">От 4000 Р.</p>
-        <button type="button" class="detail">ПОДРОБНЕЕ</button>
-        <button type="button" class="reservation">ЗАБРОНИРОВАТЬ</button>
+        <button type="button" class="blue-btn">ПОДРОБНЕЕ</button>
+        <button type="button" class="brown-btn">ЗАБРОНИРОВАТЬ</button>
       </div>
       <div class="stars-4">
         <p class="reit-label">РЕЙТИНГ:</p>
@@ -148,11 +148,11 @@
         <h3 class="hotel-name">DESERT QUAIL INN</h3>
         <p class="hotel-type" id="hotel-type-02">МОТЕЛЬ</p>
         <p class="hotel-cost" id="hotel-cost-02">От 3000 Р.</p>
-        <button type="button" class="detail">ПОДРОБНЕЕ</button>
-        <button type="button" class="reservation">ЗАБРОНИРОВАТЬ</button>
+        <button type="button" class="blue-btn">ПОДРОБНЕЕ</button>
+        <button type="button" class="brown-btn">ЗАБРОНИРОВАТЬ</button>
       </div>
       <div class="stars-3">
-        <p id="reit-label">РЕЙТИНГ:</p>
+        <p class="reit-label">РЕЙТИНГ:</p>
         <p class="reit-number" id="reit-number-02">8,9</p>
       </div>
     </article>
@@ -165,8 +165,8 @@
         <h3 class="hotel-name">VILLAS AT POCO DIABLO</h3>
         <p class="hotel-type" id="hotel-type-03">АПАРТАМЕНТЫ</p>
         <p class="hotel-cost" id="hotel-cost-03">От 2000 Р.</p>
-        <button type="button" class="detail">ПОДРОБНЕЕ</button>
-        <button type="button" class="reservation">ЗАБРОНИРОВАТЬ</button>
+        <button type="button" class="blue-btn">ПОДРОБНЕЕ</button>
+        <button type="button" class="brown-btn">ЗАБРОНИРОВАТЬ</button>
       </div>
       <div class="stars-2">
         <p>РЕЙТИНГ:</p>
@@ -187,18 +187,19 @@
     Достаточно ли alt для доступности? Или надо добавить в <a> аттрибуты aria?
   -->
   <ul class="sedona-social">
-    <li>
+    <li class="social-item social-item--twitter">
       <a href=""><img src="img/twitter-logo.svg" width="17" height="15" alt="Твиттер города Седона"></a>
     </li>
-    <li>
+    <li class="social-item social-item--fb">
       <a href=""><img src="img/facebook-logo.svg" width="12" height="22" alt="Страница Фейсбук города Седона"></a>
-    </li>
-    <li>
+      </li>
+    <li class="social-item social-item--youtube">
       <a href=""><img src="img/youtube-logo.svg" width="20" height="16" alt="Канал Ютуб города Седона"></a>
     </li>
   </ul>
 
-  <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">WEBSITE BY
+  <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+    WEBSITE BY
     <img src="img/by-html-academy.svg" width="115" height="41" alt="Сайт сделан студией HTML academy">
   </a>
 </footer>

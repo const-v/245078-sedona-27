@@ -29,7 +29,7 @@ sedona-hotels.html
 }
 
 /*
-  html
+  All html
 */
 
 body {
@@ -59,92 +59,7 @@ a {
   text-decoration: none;
 }
 
-.nav {
-  font: inherit;
-  font-weight: 700;
-  color: black;
-
-  background: white;
-}
-
-.nav-item a {
-  color: black;
-}
-
-.nav-menu {
-list-style-type: none;
-}
-
-.nav-item--current a {
-  color: #766357;
-}
-
-.nav-menu a:hover {
-  color: #81b3d2;
-}
-
-.nav-menu a:active {
-  color: #cacaca;
-}
-
-.site-header {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-}
-
-.sub-header {
-  font: inherit;
-  line-height: 26px;
-}
-
-.advantage {
-  background: #81b3d2;
-}
-
-.advantage-header {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 21px;
-}
-
-.advantage-text {
-font: inherit;
-line-height: 21px;
-}
-
-.advantages-list {
-list-style-type: none;
-}
-
-.advantage-header {
-font-size: 21px;
-font-weight: 700;
-line-height: 21px;
-}
-
-.advantage-header--white {
-color: white;
-}
-
-.advantage-text--white {
-  color: white;
-}
-
-.map-question strong {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-}
-
-.search-label {
-  font-weight: 700;
-
-  color: black;
-}
-
-.toggle-search {
-  font: inherit;
+.brown-btn {
   font-weight: 700;
 
   color: white;
@@ -153,31 +68,16 @@ color: white;
   background: #766357;
 }
 
-.toggle-search:hover {
+.brown-btn:hover {
   background: #604e43;
 }
 
-.toggle-search:active {
+.brown-btn:active {
   color: #928a85;
   background: #503e33;
 }
 
-.search-form input {
-  font-weight: 700;
-
-  border: 0;
-  background: #f2f2f2;
-}
-
-.search-form input:hover {
-  background: #ebebeb;
-}
-
-.search-form input:active {
-  background: white;
-}
-
-.search-btn {
+.blue-btn {
   font-weight: 700;
 
   border: 0;
@@ -185,11 +85,11 @@ color: white;
   background: #81b3d2;
 }
 
-.search-btn:hover {
+.blue-btn:hover {
   background: #669ec0;
 }
 
-.search-btn:active {
+.blue-btn:active {
   color: #94b9d2;
 
   background: #5496bd;
@@ -229,4 +129,146 @@ color: white;
 
 .htmlacademy-logo {
   color: black;
+}
+
+/*
+ index.html
+*/
+
+.nav {
+  font: inherit;
+  font-weight: 700;
+  color: black;
+
+  background: white;
+}
+
+.nav-item a {
+  color: black;
+}
+
+.nav-menu {
+  list-style-type: none;
+}
+
+.nav-item--current a {
+  color: #766357;
+}
+
+.nav-menu a:hover {
+  color: #81b3d2;
+}
+
+.nav-menu a:active {
+  color: #cacaca;
+}
+
+.site-header {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sub-header {
+  font: inherit;
+  line-height: 26px;
+}
+
+.advantage {
+  background: #81b3d2;
+}
+
+.advantage-header {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.advantage-text {
+  font: inherit;
+  line-height: 21px;
+}
+
+.advantages-list {
+  list-style-type: none;
+}
+
+.advantage-header {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.advantage-header--white {
+  color: white;
+}
+
+.advantage-text--white {
+  color: white;
+}
+
+.map-question strong {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.search-label {
+  font-weight: 700;
+
+  color: black;
+}
+
+.search-form input {
+  font-weight: 700;
+
+  border: 0;
+  background: #f2f2f2;
+}
+
+.search-form input:hover {
+  background: #ebebeb;
+}
+
+.search-form input:active {
+  background: white;
+}
+
+
+/*
+ sedona-hotels.html
+*/
+
+.sort-label {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.sort-types {
+  list-style: none;
+}
+
+.sort-type {
+  color: #cacaca;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort--selected {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.sort-type:hover {
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-type:active {
+  color: black;
+  border-bottom: none;
+}
+
+.reit-label {
+  color: red;
+  /*color: #666666;*/
 }
