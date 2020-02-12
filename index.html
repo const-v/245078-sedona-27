@@ -117,17 +117,10 @@
 
   <section class="hotel-search">
     <h2 class="visually-hidden">Поиск отеля по параметрам</h2>
-  <!-- http://validator.w3.org выдал предупреждение, что секция не размечена заголовком 2-6 уровней
-    Надо ли вставлять сюда скрытый заголовок?
-    -->
     <p class="map-question">
       <strong>ЗАИНТЕРЕСОВАЛИСЬ?</strong><br>
       УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
     </p>
-<!--
-      Поскольку у формы есть legend для fieldset, то можно не добавлять aria-label?
-      Или надо?..
- -->
 
     <button class="brown-btn">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
 
@@ -136,9 +129,6 @@
         <p>
           <label class="search-label" for="arrival-input">ДАТА ЗАЕЗДА:</label>
           <input class="arrival-date" id="arrival-input" name="arrival" type="date" value="2017-04-24">
-        <!-- Надо ли добавлять tabindex="0" и aria-labelledby для input как это рекоемндуется на https://weblind.ru?
-        Ведь поля уже обернуты в fieldset и навигация по ним работает с клавиатуры
-        -->
         </p>
         <p>
           <label class="search-label" for="departure-input">ДАТА ВЫЕЗДА:</label>
@@ -152,7 +142,7 @@
           <label class="search-label" for="children-input">ДЕТИ:</label>
           <input class="children-numbers" id="children-input" name="children" type="number" placeholder="0">
         </p>
-        <button class="blue-btn blue-btn--search" type="submit">НАЙТИ</button>
+        <button class="blue-btn" type="submit">НАЙТИ</button>
       </fieldset>
     </form>
 
@@ -160,13 +150,6 @@
       <h2 class="visually-hidden">Карта выбора отеля</h2>
 <!--     Search map   -->
       <p><img src="img/map.jpg" width="1200" height="473" alt="Карта города Седона"></p>
-    <!-- В лекции про форматы изображений, подобная катра была переведена в png,
-    потому что меньше весила в этом формате
-    Я бы, даже перевел ее в gif, если бы это дало экономию, а она может быть до 10 раз
-
-    Для примера: map-.gif весит 42 кб. Самый оптимизированный png не будет настолько мал,
-    не говоря про jpg
-          -->
     </section>
   </section>
 </main>
@@ -176,9 +159,6 @@
     Тел: +7(495) 666-02-66
   </p>
 
-  <!--
-    Достаточно ли alt для доступности? Или надо добавить в <a> аттрибуты aria?
-  -->
   <ul class="sedona-social">
     <li class="social-item social-item--twitter">
       <a href=""><img src="img/twitter-logo.svg" width="17" height="15" alt="Твиттер города Седона"></a>

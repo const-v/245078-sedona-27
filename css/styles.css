@@ -127,12 +127,20 @@ a {
   opacity: 0.5;
 }
 
+.htmlacademy-logo {
+  font-size: 14px;
+  line-height: 26px;
+
+  text-decoration: none;
+
+  color: black;
+}
+
 .htmlacademy-logo svg {
 
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /*fill: gold;*/
   fill: black;
 
   width: 115px;
@@ -148,17 +156,12 @@ a {
 }
 
 /*
-.htmlacademy-logo {
-  color: black;
-}
-*/
-
-
-/*
   buttons
 */
 
 .brown-btn {
+  font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
 
   border: 0;
@@ -176,6 +179,8 @@ a {
 }
 
 .blue-btn {
+  font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
 
   border: 0;
@@ -247,10 +252,17 @@ a {
   line-height: 36px;
 }
 
-.search-label {
+.search-form .search-label {
+  font-size: 14px;
+  line-height: 26px;
   font-weight: 700;
 
   color: black;
+}
+
+.arrival-date, .departure-date, .adults-numbers, .children-numbers {
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .search-form input {
@@ -268,22 +280,25 @@ a {
   background: white;
 }
 
-.blue-btn--search {
-  line-height: 26px;
-}
-
 /*
  sedona-hotels.html
 */
 
-.search-label {
+.search-header {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.sort-results .search-label {
+  font-size: 21px;
   line-height: 26px;
 }
 
 .sort-label {
   font-size: 12px;
-  font-weight: 500;
   line-height: 18px;
+  font-weight: 500;
 }
 
 .sort-types {
@@ -312,16 +327,22 @@ a {
   border-bottom: none;
 }
 
+.hotel-type, .hotel-cost, .reit-label, .reit-number {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.hotel-type, .hotel-cost {
+  color: #333333;
+}
+
 .hotel-name {
   font-size: 21px;
   line-height: 26px;
 }
 
-.blue-btn--detail {
-  line-height: 21px;
-}
-
-.brown-btn--detail {
+.filtered-hotels .blue-btn, .filtered-hotels .brown-btn {
+  font-size: 14px;
   line-height: 21px;
 }
 
