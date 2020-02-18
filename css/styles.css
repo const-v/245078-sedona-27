@@ -35,6 +35,7 @@ sedona-hotels.html
 body {
   margin: 0;
   padding: 0;
+  width: 1200px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -42,6 +43,12 @@ body {
   font-weight: 500;
 
   background-color: white;
+}
+
+* {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding-inline-start: 0;
 }
 
 a {
@@ -63,22 +70,40 @@ a {
   header
 */
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 .nav {
   font: inherit;
   font-weight: 700;
   color: black;
+}
 
-  background: white;
+.sedona-logo {
+  display: block;
+  width: 140px;
+  margin: 0 auto;
+  margin-bottom: -65px;
+}
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 111px;
+  margin-right: 111px;
+}
+
+.nav-menu {
+
+  list-style-type: none;
 }
 
 .nav-item a {
   color: black;
-
   line-height: 26px;
-}
-
-.nav-menu {
-  list-style-type: none;
 }
 
 .nav-item--current a {
@@ -93,9 +118,25 @@ a {
   color: #cacaca;
 }
 
+.welcome-bg {
+  display: block;
+  margin: 77px auto;
+}
+
 /*
   footer
 */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  /*justify-content: flex-end;*/
+  /*align-items: flex-end;*/
+}
+
+footer > * {
+  margin: auto;
+}
 
 .sedona-contacts {
   font-size: 21px;
@@ -104,6 +145,12 @@ a {
 }
 
 .sedona-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 150px;
+
   list-style: none;
 }
 
@@ -202,10 +249,18 @@ a {
  index.html
 */
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
 .site-header {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  margin-top: 55px;
 }
 
 .sub-header {
@@ -213,8 +268,45 @@ a {
   line-height: 26px;
 }
 
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 .advantage {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+
+  height: 256px;
+
   background: #81b3d2;
+}
+
+.advantage-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+.advantage-block > * {
+  margin: auto 0;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  /*align-content: space-around;*/
+
+  list-style-type: none;
+}
+
+.advantage-item {
+  width: 300px;
+  margin: 0 auto;
 }
 
 .advantage-header {
@@ -225,16 +317,6 @@ a {
 
 .advantage-text {
   font: inherit;
-  line-height: 21px;
-}
-
-.advantages-list {
-  list-style-type: none;
-}
-
-.advantage-header {
-  font-size: 21px;
-  font-weight: 700;
   line-height: 21px;
 }
 
@@ -252,18 +334,12 @@ a {
   line-height: 36px;
 }
 
-.search-form .search-label {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
+/*
+.search-form {
+  display: flex;
 
-  color: black;
 }
-
-.arrival-date, .departure-date, .adults-numbers, .children-numbers {
-  font-size: 14px;
-  line-height: 26px;
-}
+*/
 
 .search-form input {
   font-weight: 700;
@@ -278,6 +354,19 @@ a {
 
 .search-form input:active {
   background: white;
+}
+
+.search-form .search-label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+
+  color: black;
+}
+
+.arrival-date, .departure-date, .adults-numbers, .children-numbers {
+  font-size: 14px;
+  line-height: 26px;
 }
 
 /*

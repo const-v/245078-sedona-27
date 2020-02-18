@@ -7,26 +7,13 @@
     <meta name="description" content="Бронирование отелей в городе Седона">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-  <!--  Добавил светло-серый фон, чтобы не пропадали логотипы соцсетей, пока не выедена нормальная стилизация
-  Да и уныло выглядит, как-то :)
-  -->
   </head>
-
 <body>
-
-<!--
-  Надо ли добавлять аттрибуты role и aria для тегов header, main и footer?
--->
 
 <header>
   <a class="sedona-logo" href="index.html">
     <p><img src="img/sedona-logo.svg" width="140" height="72" alt="Логотип сайта &laquo;Седона&raquo;"></p>
   </a>
-
-  <!--
-    Достаточно ли использовано аттрибутов role?
-    Не придумал, куда вставлять аттрибуты aria, вроде все теги имеют или содержжимое, или alt или связанные label
-  -->
 
   <nav class="nav">
     <ul class="nav-menu" role="menubar">
@@ -62,16 +49,14 @@
 
   <section class="advantages">
     <h2 class="visually-hidden">Преимущества города Седона</h2>
-    <!-- http://validator.w3.org выдал предупреждение, что секция не размечена заголовком 2-6 уровней
-      Надо ли вставлять сюда скрытый заголовок?
-      -->
     <section class="advantage">
+    <div class="advantage-block">
       <h3 class="advantage-header advantage-header--white">НАСТОЯЩИЙ<br>ГОРОДОК</h3>
       <p class="advantage-text advantage-text--white">— №1 —</p>
       <p class="advantage-text advantage-text--white">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
-      <p class="advantage-photo"><img src="img/city.jpg" width="800" height="256" alt="Фото города"></p>
+    </div>
+    <p class="advantage-photo"><img src="img/city.jpg" width="800" height="256" alt="Фото города"></p>
     </section>
-
 
     <ul class="advantages-list advantages-list--icons">
       <li class="advantage-item">
@@ -88,12 +73,13 @@
       </li>
     </ul>
 
-
     <section class="advantage">
       <p class="advantage-photo"><img src="img/canyon.jpg" width="800" height="256" alt="Фото каньона"></p>
-      <h3 class="advantage-header advantage-header--white">ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h3>
-      <p class="advantage-text advantage-text--white">— №2 —</p>
-      <p class="advantage-text advantage-text--white">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+      <div class="advantage-block">
+        <h3 class="advantage-header advantage-header--white">ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h3>
+        <p class="advantage-text advantage-text--white">— №2 —</p>
+        <p class="advantage-text advantage-text--white">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+      </div>
     </section>
 
     <ul class="advantages-list">
