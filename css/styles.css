@@ -130,8 +130,6 @@ header {
 footer {
   display: flex;
   flex-direction: row;
-  /*justify-content: flex-end;*/
-  /*align-items: flex-end;*/
 }
 
 footer > * {
@@ -148,6 +146,7 @@ footer > * {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 
   width: 150px;
 
@@ -334,13 +333,6 @@ main {
   line-height: 36px;
 }
 
-/*
-.search-form {
-  display: flex;
-
-}
-*/
-
 .search-form input {
   font-weight: 700;
 
@@ -372,6 +364,59 @@ main {
 /*
  sedona-hotels.html
 */
+
+main {
+  margin-top: 50px;
+}
+
+.hotels-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hotels-form {
+/*
+*/
+}
+
+.infrastructure-container,
+.select-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cost-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sort-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort-results {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 450px;
+}
+
+.sort-types {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 300px;
+}
 
 .search-header {
   font-size: 21px;
@@ -416,6 +461,24 @@ main {
   border-bottom: none;
 }
 
+/* Найденные отели */
+
+.filtered-hotels {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hotel-data {
+  display: flex;
+
+}
+
 .hotel-type, .hotel-cost, .reit-label, .reit-number {
   font-size: 14px;
   line-height: 21px;
@@ -448,5 +511,7 @@ main {
 }
 
 .stars-1, .stars-2, .stars-3, .stars-4, .stars-5 {
+  margin-left: auto;
+
   background: #f2f2f2;
 }
