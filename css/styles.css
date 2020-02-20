@@ -46,6 +46,7 @@ body {
 }
 
 * {
+  /* Убрал грязь из  Хрома */
   margin-block-end: 0;
   margin-block-start: 0;
   padding-inline-start: 0;
@@ -66,6 +67,58 @@ a {
   overflow: hidden;
 }
 
+img {
+  min-width: 100%;
+  height: auto;
+}
+
+/*
+  buttons
+*/
+
+.blue-btn, .blue-btn {
+  display: inline-block;
+}
+
+.brown-btn {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+  border: 0;
+  color: white;
+  background: #766357;
+}
+
+.brown-btn:hover {
+  background: #604e43;
+}
+
+.brown-btn:active {
+  color: #928a85;
+  background: #503e33;
+}
+
+.blue-btn {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+  border: 0;
+  color: white;
+  background: #81b3d2;
+}
+
+.blue-btn:hover {
+  background: #669ec0;
+}
+
+.blue-btn:active {
+  color: #94b9d2;
+
+  background: #5496bd;
+}
+
 /*
   header
 */
@@ -76,18 +129,21 @@ header {
   align-content: center;
 }
 
-.nav {
-  font: inherit;
-  font-weight: 700;
-  color: black;
-}
-
 .sedona-logo {
   display: block;
   width: 140px;
-  /*margin: 0 auto;*/
-  /*margin-bottom: -65px;*/
+
+  z-index: 10;
+  margin: 0 auto;
+  margin-bottom: -65px;
 }
+
+.nav {
+font: inherit;
+font-weight: 700;
+color: black;
+}
+
 .nav-menu {
   display: flex;
   flex-direction: row;
@@ -102,6 +158,8 @@ header {
 }
 
 .nav-item a {
+  display: block;
+
   color: black;
   line-height: 26px;
 }
@@ -154,6 +212,12 @@ footer > * {
 }
 
 .social-item {
+  display: flex;
+  width: 46px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+
   background: #81b3d2;
 }
 
@@ -165,28 +229,28 @@ footer > * {
   background: #669ec0;
 }
 
-.sedona-social:active {
+.social-item:active {
   background: #5496bd;
 }
 
-.sedona-social:active img {
+.social-item:active img {
   opacity: 0.5;
 }
 
-.htmlacademy-logo {
+.htmlacademy-logo span {
+  display: inline-block;
+
   font-size: 14px;
   line-height: 26px;
-
   text-decoration: none;
 
   color: black;
 }
 
-.htmlacademy-logo svg {
+.htmlacademy-logo p {
+  display: inline-block;
+  vertical-align: middle;
 
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   fill: black;
 
   width: 115px;
@@ -199,49 +263,6 @@ footer > * {
 
 .htmlacademy-logo:active svg {
   fill: #bdbbbc;
-}
-
-/*
-  buttons
-*/
-
-.brown-btn {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-
-  border: 0;
-  color: white;
-  background: #766357;
-}
-
-.brown-btn:hover {
-  background: #604e43;
-}
-
-.brown-btn:active {
-  color: #928a85;
-  background: #503e33;
-}
-
-.blue-btn {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-
-  border: 0;
-  color: white;
-  background: #81b3d2;
-}
-
-.blue-btn:hover {
-  background: #669ec0;
-}
-
-.blue-btn:active {
-  color: #94b9d2;
-
-  background: #5496bd;
 }
 
 /*
@@ -298,7 +319,6 @@ main {
   display: flex;
   flex-direction: row;
   align-content: space-between;
-  /*align-content: space-around;*/
 
   list-style-type: none;
 }
@@ -333,11 +353,56 @@ main {
   line-height: 36px;
 }
 
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form-element {
+  display: inline-block;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+
+.search-form {
+  align-self: center;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 458px;
+  padding: 55px;
+  padding-top: 44px;
+
+  box-shadow: 0 0 5px lightgray;
+}
+
 .search-form input {
   font-weight: 700;
+  width: 346px;
+  height: 48px;
+  padding-left: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
 
   border: 0;
   background: #f2f2f2;
+}
+
+#adults-input, #children-input {
+  width: 114px;
+  margin-left: 0;
 }
 
 .search-form input:hover {
@@ -356,7 +421,17 @@ main {
   color: black;
 }
 
-.arrival-date, .departure-date, .adults-numbers, .children-numbers {
+.search-form .blue-btn {
+  width: 100%;
+  height: 58px;
+
+  margin-top: 35px;
+}
+
+.arrival-date,
+.departure-date,
+.adults-numbers,
+.children-numbers {
   font-size: 14px;
   line-height: 26px;
 }
