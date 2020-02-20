@@ -85,8 +85,8 @@ header {
 .sedona-logo {
   display: block;
   width: 140px;
-  margin: 0 auto;
-  margin-bottom: -65px;
+  /*margin: 0 auto;*/
+  /*margin-bottom: -65px;*/
 }
 .nav-menu {
   display: flex;
@@ -476,7 +476,7 @@ main {
 
 .hotel-data {
   display: flex;
-
+  flex-direction: column;
 }
 
 .hotel-type, .hotel-cost, .reit-label, .reit-number {
@@ -499,12 +499,16 @@ main {
 }
 
 .reit-label {
+  display: inline-block;
+
   font-size: 14px;
   line-height: 21px;
   color: #666666;
 }
 
 .reit-number {
+  display: inline-block;
+
   font-size: 14px;
   line-height: 21px;
   color: #666666;
