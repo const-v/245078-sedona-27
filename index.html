@@ -23,6 +23,8 @@
       <li class="nav-item" role="menuitem">
         <a href="">ФОТО И ВИДЕО</a>
       </li>
+    </ul>
+    <ul class="nav-menu" role="menubar">
       <li class="nav-item" role="menuitem">
         <a href="">КАРТА ШТАТА</a>
       </li>
@@ -33,7 +35,7 @@
   </nav>
 
   <div class="welcome-bg">
-    <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать">
+    <img src="img/welcome.svg" width="1200" height="510" alt="Добро пожаловать">
   </div>
 </header>
 
@@ -53,7 +55,8 @@
     <div class="advantage-block">
       <h3 class="advantage-header advantage-header--white">НАСТОЯЩИЙ<br>ГОРОДОК</h3>
       <p class="advantage-text advantage-text--white">— №1 —</p>
-      <p class="advantage-text advantage-text--white">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
+      <p class="advantage-text advantage-text--white">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, <br>
+                                                      ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
     </div>
     <p class="advantage-photo"><img src="img/city.jpg" width="800" height="256" alt="Фото города"></p>
     </section>
@@ -78,7 +81,8 @@
       <div class="advantage-block">
         <h3 class="advantage-header advantage-header--white">ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h3>
         <p class="advantage-text advantage-text--white">— №2 —</p>
-        <p class="advantage-text advantage-text--white">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+        <p class="advantage-text advantage-text--white">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО <br>
+                                                        ВЫ ОСМЕЛИТЕСЬ</p>
       </div>
     </section>
 
@@ -103,28 +107,34 @@
 
   <section class="hotel-search">
     <h2 class="visually-hidden">Поиск отеля по параметрам</h2>
-    <p class="map-question">
-      <strong>ЗАИНТЕРЕСОВАЛИСЬ?</strong><br>
-      УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
-    </p>
 
-    <button class="brown-btn">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+    <div class="map-question-container">
+      <p class="map-question">
+        <strong>ЗАИНТЕРЕСОВАЛИСЬ?</strong>
+      </p>
+      <p class="map-question">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, <br>
+      И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+
+      <button class="brown-btn">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+    </div>
 
     <form class="search-form" method="post" action="#">
-      <label class="search-label" for="arrival-input">ДАТА ЗАЕЗДА:</label>
-      <input class="arrival-date" id="arrival-input" name="arrival" type="date" value="2017-04-24">
-      <label class="search-label" for="departure-input">ДАТА ВЫЕЗДА:</label>
-      <input class="departure-date" id="departure-input" name="departure" type="date" value="2017-07-04">
-      <label class="search-label" for="adults-input">ВЗРОСЛЫЕ:</label>
-      <input class="adults-numbers" id="adults-input" name="adults" type="number" placeholder="2">
-      <label class="search-label" for="children-input">ДЕТИ:</label>
-      <input class="children-numbers" id="children-input" name="children" type="number" placeholder="0">
+      <div class="search-form-container">
+        <label class="search-label" for="arrival-input">ДАТА ЗАЕЗДА:</label>
+        <input class="arrival-date" id="arrival-input" name="arrival" type="date" value="2017-04-24">
+        <label class="search-label" for="departure-input">ДАТА ВЫЕЗДА:</label>
+        <input class="departure-date" id="departure-input" name="departure" type="date" value="2017-07-04">
+        <label class="search-label" for="adults-input">ВЗРОСЛЫЕ:</label>
+        <input class="adults-numbers" id="adults-input" name="adults" type="number" placeholder="2">
+        <label class="search-label" for="children-input">ДЕТИ:</label>
+        <input class="children-numbers" id="children-input" name="children" type="number" placeholder="0">
+      </div>
       <button class="blue-btn" type="submit">НАЙТИ</button>
     </form>
 
     <section class="search-map">
       <h2 class="visually-hidden">Карта выбора отеля</h2>
-<!--     Search map   -->
+
       <p><img src="img/map.jpg" width="1200" height="473" alt="Карта города Седона"></p>
     </section>
   </section>
@@ -132,7 +142,7 @@
 
 <footer>
   <p class="sedona-contacts">#VISITSEDONA<br>
-    Тел: +7(495) 666-02-66
+    ТЕЛ: +7(495) 666-02-66
   </p>
 
   <ul class="sedona-social">
