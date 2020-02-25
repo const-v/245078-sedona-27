@@ -24,6 +24,8 @@
       <li class="nav-item" role="menuitem">
         <a href="">ФОТО И ВИДЕО</a>
       </li>
+    </ul>
+    <ul class="nav-menu" role="menubar">
       <li class="nav-item" role="menuitem">
         <a href="">КАРТА ШТАТА</a>
       </li>
@@ -32,6 +34,7 @@
       </li>
     </ul>
   </nav>
+
 </header>
 
 <main>
@@ -39,44 +42,41 @@
     Выбор и бронирование отеля
   </h1>
 
-  <section class="hotel-filter">
+  <section class="hotel-filters">
     <h2 class="visually-hidden">Выбор параметров отелей</h2>
 
     <form class="hotels-form" method="post" action="#">
       <fieldset class="infrastructure-selects">
         <legend>ИНФРАСТРУКТУРА:</legend>
         <div class="infrastructure-container">
-          <p>
-            <input class="pool-filter" id="pool-input" name="pool" type="checkbox" checked>
-            <label class="pool-label" for="pool-input">БАССЕЙН</label>
-          </p>
-          <p>
-            <input class="parking-filter" id="parking-input" name="parking" type="checkbox">
-            <label class="parking-label" for="parking-input">ПАРКОВКА</label>
-          </p>
-          <p>
-            <input class="wifi-filter" id="wifi-input" name="wifi" type="checkbox">
-            <label class="wifi-label" for="wifi-input">WI-FI</label>
-          </p>
-        </div>
+          <label class="pool-label" for="pool-input">
+            <input class="pool-filter" id="pool-input" name="pool" type="checkbox" checked> БАССЕЙН
+          </label>
+          <label class="parking-label" for="parking-input">
+            <input class="parking-filter" id="parking-input" name="parking" type="checkbox"> ПАРКОВКА
+          </label>
+          <label class="wifi-label" for="wifi-input">
+            <input class="wifi-filter" id="wifi-input" name="wifi" type="checkbox"> WI-FI
+          </label>
+      </div>
       </fieldset>
       <fieldset class="hotel-selects">
         <legend>ТИП ЖИЛЬЯ:</legend>
 
         <div class="select-container">
-          <p>
+
+          <label class="hotel-label" for="hotel-input">
+
             <input class="hotel-filter" id="hotel-input" name="hotel" type="checkbox" checked>
-            <label class="hotel-label" for="hotel-input">ГОСТИНИЦА</label>
-          </p>
-          <p>
-            <input class="motel-filter" id="motel-input" name="motel" type="checkbox" checked>
-            <label class="motel-label" for="motel-input">МОТЕЛЬ</label>
-          </p>
-          <p>
-            <input class="apartments-filter" id="apartments-input" name="apartments" type="checkbox" checked>
-            <label class="apartments-label" for="apartments-input">АПАРТАМЕНТЫ</label>
-          </p>
-        </div>
+
+            ГОСТИНИЦА
+          </label>
+
+          <label class="motel-label" for="motel-input">
+            <input class="motel-filter" id="motel-input" name="motel" type="checkbox" checked> МОТЕЛЬ</label>
+          <label class="apartments-label" for="apartments-input">
+            <input class="apartments-filter" id="apartments-input" name="apartments" type="checkbox" checked> АПАРТАМЕНТЫ</label>
+      </div>
       </fieldset>
       <fieldset class="cost-select">
       <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
@@ -103,7 +103,7 @@
       <p class="search-label" id="search-numbers">3</p>
       <ul class="sort-types">
         <li>
-          <a href="" class="sort-label">СОРТИРОВКА:</a>
+          <p class="sort-label">СОРТИРОВКА:</p>
         </li>
         <li>
           <a href="" class="sort-type sort--selected">ПО ЦЕНЕ</a>
@@ -125,6 +125,7 @@
         <a href=""><span>ПО УБЫВАНИЮ</span></a>
       </li>
     </ul>
+
   </div>
 
   <section class="filtered-hotels">
@@ -135,12 +136,16 @@
       </p>
       <div class="hotel-data">
         <h3 class="hotel-name">AMARA RESORT & SPA</h3>
-        <p class="hotel-type" id="hotel-type-01">ГОСТИНИЦА</p>
-        <p class="hotel-cost" id="hotel-cost-01">От 4000 Р.</p>
-        <button type="button" class="blue-btn">ПОДРОБНЕЕ</button>
-        <button type="button" class="brown-btn">ЗАБРОНИРОВАТЬ</button>
+        <div class="hotel-type-container">
+          <p class="hotel-type" id="hotel-type-01">ГОСТИНИЦА</p>
+          <p class="hotel-cost" id="hotel-cost-01">ОТ 4000 Р.</p>
+        </div>
+        <div class="hotel-btn-container">
+          <button type="button" class="blue-btn">ПОДРОБНЕЕ</button>
+          <button type="button" class="brown-btn">ЗАБРОНИРОВАТЬ</button>
+        </div>
       </div>
-      <div class="stars-4">
+      <div class="stars stars-4">
         <p class="reit-label">РЕЙТИНГ: </p>
         <p class="reit-number" id="reit-number-01">8,5</p>
       </div>
@@ -152,12 +157,16 @@
       </p>
       <div class="hotel-data">
         <h3 class="hotel-name">DESERT QUAIL INN</h3>
-        <p class="hotel-type" id="hotel-type-02">МОТЕЛЬ</p>
-        <p class="hotel-cost" id="hotel-cost-02">От 3000 Р.</p>
-        <button type="button" class="blue-btn">ПОДРОБНЕЕ</button>
-        <button type="button" class="brown-btn">ЗАБРОНИРОВАТЬ</button>
+        <div class="hotel-type-container">
+          <p class="hotel-type" id="hotel-type-02">МОТЕЛЬ</p>
+          <p class="hotel-cost" id="hotel-cost-02">ОТ 3000 Р.</p>
+        </div>
+        <div class="hotel-btn-container">
+          <button type="button" class="blue-btn">ПОДРОБНЕЕ</button>
+          <button type="button" class="brown-btn">ЗАБРОНИРОВАТЬ</button>
+        </div>
       </div>
-      <div class="stars-3">
+      <div class="stars stars-3">
         <p class="reit-label">РЕЙТИНГ: </p>
         <p class="reit-number" id="reit-number-02">8,9</p>
       </div>
@@ -169,12 +178,16 @@
       </p>
       <div class="hotel-data">
         <h3 class="hotel-name">VILLAS AT POCO DIABLO</h3>
-        <p class="hotel-type" id="hotel-type-03">АПАРТАМЕНТЫ</p>
-        <p class="hotel-cost" id="hotel-cost-03">От 2000 Р.</p>
-        <button type="button" class="blue-btn">ПОДРОБНЕЕ</button>
-        <button type="button" class="brown-btn">ЗАБРОНИРОВАТЬ</button>
+        <div class="hotel-type-container">
+          <p class="hotel-type" id="hotel-type-03">АПАРТАМЕНТЫ</p>
+          <p class="hotel-cost" id="hotel-cost-03">ОТ 2000 Р.</p>
+        </div>
+        <div class="hotel-btn-container">
+          <button type="button" class="blue-btn">ПОДРОБНЕЕ</button>
+          <button type="button" class="brown-btn">ЗАБРОНИРОВАТЬ</button>
+        </div>
       </div>
-      <div class="stars-2">
+      <div class="stars stars-2">
         <p class="reit-label">РЕЙТИНГ: </p>
         <p class="reit-number" id="reit-number-03">9,2</p>
       </div>
