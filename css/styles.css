@@ -46,6 +46,8 @@ body {
 }
 
 * {
+  /* Убрал грязь из Хрома */
+
   margin-block-end:  0;
   margin-block-start:  0;
   padding-block-end:  0;
@@ -59,7 +61,7 @@ a {
 }
 
 .visually-hidden {
-  /*border:  0;*/
+  border:  0;
   clip:  rect(0 0 0 0);
   height:  1px;
   margin:  -1px;
@@ -367,7 +369,16 @@ main {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  align-content: space-between;
+  justify-content: space-between;
+
+  padding-left: 75px;
+  padding-right: 55px;
+}
+
+.advantages-list--icons {
+  padding-left: 50px;
+  padding-right: 50px;
+  /*background-color: red;*/
 }
 
 .advantages-list:last-child {
@@ -381,7 +392,7 @@ main {
 }
 
 .advantages-list--icons .advantage-item {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   width: 300px;
   padding-top: 162px;
 }
@@ -470,11 +481,14 @@ main {
 
   font-weight: 700;
 
-  background: #f2f2f2;
   border: 0;
 }
 
-.arrival-date,.departure-date,.adults-numbers,.children-numbers {
+.arrival-date,
+.departure-date,
+.adults-numbers,
+.children-numbers {
+  box-sizing: border-box;
   height: 38px;
 
   font-size: 14px;
@@ -483,9 +497,33 @@ main {
   border: 0;
 }
 
-#adults-input,#children-input {
-  margin-left: 0;
+.arrival-date,
+.departure-date{
+  padding-left: 10px;
+
+  background: #f2f2f2;
+  background-image: url("../img/calendar-01.svg");
+  background-position: 315px center;
+  background-repeat: no-repeat;
+  background-size: 21px 22px;
+
+}
+
+.adults-numbers,
+.children-numbers {
+  text-align: center;
+
+  background: #f2f2f2;
+}
+
+#adults-input,
+#children-input {
+  margin-left: -10px;
   width: 114px;
+  padding-left: 10px;
+
+  color: #000;
+  background-image: url("../img/plus-minus.svg");
 }
 
 #children-input {
@@ -607,10 +645,27 @@ main {
   display: flex;
   flex-direction: row;
   margin-left: auto;
+  margin-right: 0;
+
+  list-style: none;
 }
 
-.sort-arrow {
-  list-style: none;
+.arrow-type span {
+  opacity: 0;
+}
+
+.sort-arrow--down {
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  background-position: 13px 8px;
+}
+
+.sort-arrow--up {
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  background-position: 105px center;
 }
 
 .search-header {
