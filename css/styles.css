@@ -300,7 +300,7 @@ footer {
  index.html
 */
 
-.main-index {
+main {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -524,6 +524,10 @@ footer {
  sedona-hotels.html
 */
 
+main {
+  margin-top: 50px;
+}
+
 .main-sedona-hotels {
   margin-top: 50px;
 }
@@ -560,7 +564,7 @@ footer {
 
 .cost-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .sort-container {
